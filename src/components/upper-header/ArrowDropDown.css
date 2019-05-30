@@ -1,0 +1,35 @@
+.dropdown-container {
+    margin-top: 4px;
+    width: 20%;
+    margin: 0 16px;
+}
+
+.drop-down {
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* border: 1px solid rgb(237, 239, 241); */
+    border-radius: 4px;
+    height: 36px;
+}
+
+.dropdown-toggle-custom {
+    font-weight: 600;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.dropdown-toggle-custom::after {
+    margin-top: 10px;
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-left: .4em solid transparent;
+}
+
+.dropdown-icons {
+    height: 1.5rem;
+    width: 1.5rem
+}
+
+.drop-header {
+    font-size: 10px;
+}

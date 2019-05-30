@@ -1,0 +1,26 @@
+.options-button {
+    height: 28px;
+    width: 70px;
+    padding: 0;
+    margin: 9px 0 0 10px;
+    font-size: 14px;
+
+    border-radius: 4px 4px 4px 4px;
+    border-color: rgb(237, 239, 241);
+    outline: currentcolor none medium;
+
+}
+
+
+.options-button::after {
+    margin-top: 10px;
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-left: .4em solid transparent;
+}
+
+.options-icon {
+    height: 1rem;
+    width: 1rem;
+    margin-top: 3px;
+}

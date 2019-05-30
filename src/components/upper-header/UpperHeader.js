@@ -1,42 +1,29 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown, Button, Form, FormControl} from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap'
 
-import logo from '../../img/index.png'
-
+import Logo from './Logo'
 import Login from './Login'
 import MoreOptions from './MoreOptions'
+import SearchBar from './SearchBar'
+import ArrowDropDown from './ArrowDropDown'
+import Filter from './Filter'
+
+import './UpperHeader.css'
 
 
-function UpperHeader() {
+const UpperHeader = () => {
   return (
-    <Navbar bg="white" variant="light">
-      <Navbar.Brand href="/">
-        <img
-          alt=""
-          src={logo}
-          height="25"
-          className="d-inline-block align-top"
-        />
-      </Navbar.Brand>
-      <Nav className="mr-auto">
-        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="">Popular</NavDropdown.Item>
-          <NavDropdown.Item href="">All</NavDropdown.Item>
-          <NavDropdown.Item href="">Original content</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="">Coin</NavDropdown.Item>
-          <NavDropdown.Item href="">Premium</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-      <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-      <Nav.Link href="#home">Popular</Nav.Link>
-      <Nav.Link href="#home">All</Nav.Link>
-      <Nav.Link href="#home">Original content</Nav.Link>
-      <Login />
-      <MoreOptions />
+    <Navbar bg="white" variant="light" className='upper-header'>
+      <div className='d-flex flex-grow-1'>
+        <Logo />
+        <ArrowDropDown />
+        <SearchBar />
+      </div>
+      <div className='d-flex'>
+        <Filter />
+        <Login />
+        <MoreOptions />
+      </div>
     </Navbar>
   );
 }
