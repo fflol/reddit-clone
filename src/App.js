@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import './App.css';
 
 import Header from './components/Header'
-import Posts from './components/Posts'
-import SideMenu from './components/SideMenu'
+import Posts from './components/posts/Posts'
+import SideMenu from './components/side-menu/SideMenu'
 
 function App() {
   return (

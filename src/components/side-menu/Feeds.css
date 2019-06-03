@@ -1,0 +1,49 @@
+.feeds-landscape {
+    background: rgb(0, 121, 211) no-repeat scroll center center / cover;
+    background-image: url('../../img/banner@2x.png');
+    height: 34px;
+
+}
+
+.feeds-guy-container {
+    margin-top: -23px;
+    padding: 12px;
+}
+
+.feeds-guy-icon {
+    background: rgba(0, 0, 0, 0) repeat scroll 0% 0% / 40px 68px;
+    background-image: url("https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png");
+    display: inline-block;
+    /* flex-shrink: 0; */
+    height: 68px;
+    /* position: relative; */
+    width: 40px;
+}
+
+.feeds-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+    margin: 40px 0 0 10px;
+}
+
+.feeds-para {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    /* word-wrap: break-word; */
+    padding: 0 12px;
+    margin: 0;
+}
+
+.feeds-button {
+    margin: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 0px 16px;
+    width: calc(100% - 24px);
+}

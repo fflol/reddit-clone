@@ -6,7 +6,7 @@ import LowerHeader from './lower-header/LowerHeader';
 
 function Header() {
   return (
-    <header className='d-flex flex-column'>
+    <header className='d-flex flex-column bg-white mb-1'>
         <UpperHeader />
         <LowerHeader />
     </header>

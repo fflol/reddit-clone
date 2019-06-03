@@ -1,0 +1,19 @@
+.score-button-container {
+    width: 40px;
+    background-color: #F8F9FA;
+    padding: 8px 5px 0 5px;
+}
+
+.score-button {
+    background-color: inherit;
+    border: none;
+}
+
+.score-icon {
+    font-size: 20px;
+    color: rgb(135, 138, 140);
+}
+
+.score-number {
+    font-weight: 700;
+}

@@ -1,0 +1,62 @@
+.post-footer-container {
+    color: rgb(135, 138, 140);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.post-footer-button {
+    background-color: inherit;
+    border: 0;
+    padding: 7px;
+    margin: 0 4px 0 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.post-footer-button::after {
+    border: 0;
+}
+
+.dropup .dropdown-toggle::after {
+    border: 0;
+}
+
+.post-footer-button.btn:focus {
+    outline:0;
+    box-shadow: none;
+    border-radius: 4px 4px 4px 4px;
+    border-color: rgb(237, 239, 241);
+}
+
+.post-footer-button.btn:hover {
+    border-radius: 4px 4px 4px 4px;
+    border-color: rgb(237, 239, 241);
+}
+
+
+.post-footer-icon {
+    font-size: 20px;
+    margin: 0 4px 0 0;
+}
+
+.post-footer-dropdown-menu {
+    min-width: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;    
+}
+
+
+.post-footer-item {
+    padding: 0 0 0 0;
+    margin: 0 10px;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    width: inherit;
+}

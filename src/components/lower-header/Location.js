@@ -1,14 +1,26 @@
 import React from 'react'
 
-// import { Navbar, Nav } from 'react-bootstrap'
+import { Dropdown, NavDropdown } from 'react-bootstrap'
+
+import './Location.css'
 
 
 const Location = () => {
-    return (
-      <div>
-        Location
-      </div>
-    );
-  }
-  
+  return (
+    <div className='location-container'>
+      <Dropdown>
+        <Dropdown.Toggle variant="" className='sort-toggle d-flex justify-content-around'>
+          <span className='sort-toggle-title'>New Zealand</span>
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu className='font-size-14'>
+          <NavDropdown.Item href="">
+            New Zealand
+          </NavDropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    </div>
+  );
+}
+
 export default Location  

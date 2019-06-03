@@ -2,6 +2,10 @@ import React from 'react'
 
 import { Nav, NavDropdown, Button, Form, FormControl, Dropdown } from 'react-bootstrap'
 
+import './customComponents.css'
+// .font-size-14 is in ArrowDropDown.css
+
+
 
 export class CustomToggle extends React.Component {
     constructor(props, context) {
@@ -24,6 +28,7 @@ export class CustomToggle extends React.Component {
         );
     }
 }
+
 
 
 export class CustomMenu extends React.Component {
@@ -53,7 +58,7 @@ export class CustomMenu extends React.Component {
             <div style={style} className={className} aria-labelledby={labeledBy}>
                 <FormControl
                     autoFocus
-                    className="mx-3 my-2 w-auto"
+                    className="mx-3 font-size-14 custom-menu"
                     placeholder="Type to filter..."
                     onChange={this.handleChange}
                     value={value}
@@ -62,26 +67,18 @@ export class CustomMenu extends React.Component {
                     {React.Children.toArray(children).filter(
                         child => {
                             return !value || child.props.children[1].toLowerCase().startsWith(value)
-                    })}
+                        })}
                 </ul>
             </div>
         );
     }
 }
 
-// render(
-//     <Dropdown>
-//         <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-//             Custom toggle
-//       </Dropdown.Toggle>
 
-//         <Dropdown.Menu as={CustomMenu}>
-//             <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-//             <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-//             <Dropdown.Item eventKey="3" active>
-//                 Orange
-//         </Dropdown.Item>
-//             <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
-//         </Dropdown.Menu>
-//     </Dropdown>,
-// );
+export const RedditCard = (props) => {
+    return (
+        <div className={`reddit-card ${props.className ? props.className : ''}`}>
+            {props.children}
+        </div>
+    )
+}

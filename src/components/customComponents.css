@@ -1,0 +1,19 @@
+.custom-menu {
+    width: calc(100% - 40px);
+
+}
+
+input.form-control:focus {
+    /* border-color: #ced4da; */
+    box-shadow: none;
+}
+
+.reddit-card {
+    background-color: rgba(255, 255, 255);
+    overflow: hidden;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    /* transition: color 0.5s ease 0s, fill 0.5s ease 0s, box-shadow 0.5s ease 0s; */
+    /* cursor: pointer; */
+    margin: 15px 0px 0 0;
+}

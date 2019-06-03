@@ -1,14 +1,27 @@
+
+.font-size-12 {
+    font-size: 12px;
+}
+
 .options-button {
     height: 28px;
     width: 70px;
     padding: 0;
-    margin: 9px 0 0 10px;
+    margin: 7px 0 0 10px;
     font-size: 14px;
+    outline: currentcolor none medium;
+}
 
+.options-button.btn:focus {
+    outline:0;
+    box-shadow: none;
     border-radius: 4px 4px 4px 4px;
     border-color: rgb(237, 239, 241);
-    outline: currentcolor none medium;
+}
 
+.options-button.btn:hover {
+    border-radius: 4px 4px 4px 4px;
+    border-color: rgb(237, 239, 241);
 }
 
 
@@ -22,5 +35,8 @@
 .options-icon {
     height: 1rem;
     width: 1rem;
+}
+
+.options-toggle-icon {
     margin-top: 3px;
 }

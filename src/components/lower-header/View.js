@@ -1,17 +1,38 @@
 import React from 'react'
 
-import { Nav } from 'react-bootstrap'
+import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
+
+import { IoMdPause, IoMdMenu, IoMdReorder } from "react-icons/io"
+
+import './View.css'
 
 
 const View = () => {
-    return (
-      <Nav>
-        View
-        <Nav.Link href="#home">Card</Nav.Link>
-        <Nav.Link href="#home">Classic</Nav.Link>
-        <Nav.Link href="#home">Compact</Nav.Link>
-      </Nav>
-    );
-  }
-  
+  return (
+    <div className='d-flex view-container'>
+
+      <span class='view-title'>VIEW</span>
+
+      <Nav.Link href="" className='p-0'>
+        <OverlayTrigger placement='top' overlay={<Tooltip>Card</Tooltip>}>
+          <IoMdPause className='text-primary card-icon' />
+        </OverlayTrigger>
+      </Nav.Link>
+
+      <Nav.Link href="" className='p-0'>
+        <OverlayTrigger placement='top' overlay={<Tooltip>Classic</Tooltip>}>
+          <IoMdMenu className='filter-icons text-primary' />
+        </OverlayTrigger>
+      </Nav.Link>
+
+      <Nav.Link href="" className='p-0'>
+        <OverlayTrigger placement='top' overlay={<Tooltip>Compact</Tooltip>}>
+          <IoMdReorder className='filter-icons text-primary' />
+        </OverlayTrigger>
+      </Nav.Link>
+
+    </div>
+  );
+}
+
 export default View  

@@ -1,0 +1,12 @@
+.location-container {
+    margin: 0px 0px 0 25px;
+}
+
+.location-toggle {
+    height: 28px;
+    width: 110px;
+    margin: 0px 0 0 12px;
+    padding: 0px 0 0 0;
+    outline: currentcolor none medium;
+    color: #007bff;
+}
