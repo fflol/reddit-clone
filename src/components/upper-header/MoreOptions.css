@@ -4,10 +4,11 @@
 }
 
 .options-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 28px;
-    width: 70px;
     padding: 0;
-    margin: 7px 0 0 10px;
     font-size: 14px;
     outline: currentcolor none medium;
 }
@@ -26,7 +27,7 @@
 
 
 .options-button::after {
-    margin-top: 10px;
+    margin-top: 0px;
     border-top: .4em solid;
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;

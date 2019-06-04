@@ -8,8 +8,10 @@ import './Location.css'
 const Location = () => {
   return (
     <div className='location-container'>
+
       <Dropdown>
-        <Dropdown.Toggle variant="" className='sort-toggle d-flex justify-content-around'>
+
+        <Dropdown.Toggle variant="" className='sort-toggle d-flex align-items-center justify-content-around'>
           <span className='sort-toggle-title'>New Zealand</span>
         </Dropdown.Toggle>
 
@@ -18,7 +20,9 @@ const Location = () => {
             New Zealand
           </NavDropdown.Item>
         </Dropdown.Menu>
+
       </Dropdown>
+
     </div>
   );
 }

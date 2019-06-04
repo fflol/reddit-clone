@@ -10,11 +10,11 @@ import './Sort.css'
 
 const Sort = () => {
   return (
-    <div className='d-flex'>
+    <div className='d-flex align-items-center'>
       <span className='sort-title'>SORT</span>
 
       <Dropdown>
-        <Dropdown.Toggle variant="" className='sort-toggle d-flex justify-content-around'>
+        <Dropdown.Toggle variant="" className='sort-toggle d-flex align-items-center justify-content-around'>
           <IoIosBonfire className='sort-icon' />
           <span className='sort-toggle-title'>hot</span>
         </Dropdown.Toggle>

@@ -10,10 +10,13 @@ import './LowerHeader.css'
 
 function LowerHeader() {
   return (
-    <Navbar className='container lower-header'>
-      <View />
-      <Sort />
-      <Location />
+    <Navbar className='d-flex justify-content-center main-responsive-container'>
+      <div className='lower-header-container'>
+        <View />
+        <Sort />
+        <Location />
+      </div>
+      <div className='side-menu-container'></div>
     </Navbar>
   );
 }

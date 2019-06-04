@@ -1,7 +1,5 @@
 .dropdown-container {
-    margin-top: 4px;
-    width: 20%;
-    margin: 0 16px;
+    /* width: 20%; */
 }
 
 .font-size-14 {
@@ -11,8 +9,8 @@
 .dropdown-toggle-custom {
     width: 100%;
     margin-top: 7px;
-    /* border-radius: 4px 4px 4px 4px;
-    border-color: rgb(237, 239, 241); */
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .font-weight-600 {
@@ -20,7 +18,7 @@
 }
 
 .dropdown-toggle-custom::after {
-    margin-top: 10px;
+    margin-top: 0px;
     border-top: .4em solid;
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;

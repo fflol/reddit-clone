@@ -6,9 +6,9 @@ import './Login.css'
 
 const Login = () => {
     return (
-        <div className='d-flex login-container'>
-            <Button variant="outline-primary" className='mr-3 login-button'>LOG IN</Button>
-            <Button variant="primary" className='login-button'>SIGN UP</Button>
+        <div className='login-container responsive-sign-in'>
+            <Button variant="outline-primary" className='mr-3 login-button large-screen-button'>LOG IN</Button>
+            <Button variant="primary" className='login-button large-screen-button'>SIGN UP</Button>
         </div>
     )
 }

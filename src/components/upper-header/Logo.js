@@ -12,13 +12,13 @@ const Logo = () => {
                 alt=""
                 src={icon}
                 height="32"
-                className="d-inline-block align-middle pr-2"
+                className="d-inline-block align-middle"
             />
             <img
                 alt=""
                 src={text}
                 height="20"
-                className="d-inline-block align-middle"
+                className="align-middle ml-2 responsive-items"
             />
         </Navbar.Brand>
     );

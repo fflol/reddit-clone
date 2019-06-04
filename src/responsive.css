@@ -1,0 +1,235 @@
+/* under 576px  */
+@media (max-width: 576px) {
+
+    .main-responsive-container {
+        margin: 0 0px;
+        padding: 0;
+    }
+
+    .posts-container,
+    .lower-header-container {
+        width: 100%;
+    }
+
+    .responsive-items,
+    .responsive-sign-in,
+    .side-menu-container,
+    .filter-container,
+    .score-button-container,
+    .responsive-post-footer-button {
+        display: none;
+    }
+
+    .responsive-post-footer-item {
+        display: block;
+    }
+
+    .responsive-post-footer-score {
+        display: flex
+    }
+
+    .upper-header {
+        padding: 0 5px;
+    }
+
+    .dropdown-container {
+        width: 15%;
+        margin: 0 7px;
+    }
+
+    .options-button {
+        width: 40px;
+        margin: 7px 0 0 0px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .main-responsive-container {
+        margin: 0 0px;
+        padding: 0;
+    }
+
+    .posts-container,
+    .lower-header-container {
+        width: 100%;
+    }
+
+    .responsive-items,
+    .responsive-sign-in,
+    .side-menu-container,
+    .filter-container,
+    .score-button-container,
+    .responsive-post-footer-button {
+        display: none;
+    }
+
+    .responsive-post-footer-item {
+        display: block;
+    }
+
+    .responsive-post-footer-score {
+        display: flex
+    }
+
+    .upper-header {
+        padding: 0 5px;
+    }
+
+    .dropdown-container {
+        width: 15%;
+        margin: 0 7px;
+    }
+
+    .options-button {
+        width: 40px;
+        margin: 7px 0 0 0px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .main-responsive-container {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .posts-container,
+    .lower-header-container {
+        width: 100%;
+    }
+
+    .responsive-items,
+    .side-menu-container,
+    .filter-container,
+    .responsive-post-footer-item,
+    .responsive-post-footer-score {
+        display: none
+    }
+
+    .responsive-sign-in,
+    .score-button-container {
+        display: flex;
+    }
+
+    .responsive-post-footer-button {
+        display: block;
+    }
+
+    .upper-header {
+        padding: 0 5px;
+    }
+
+    .dropdown-container {
+        width: 20%;
+        margin: 0 7px;
+    }
+
+    .options-button {
+        width: 70px;
+        margin: 7px 0 0 10px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .main-responsive-container {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .posts-container,
+    .lower-header-container {
+        width: 648px;
+    }
+
+    .responsive-sign-in,
+    .side-menu-container,
+    .filter-container,
+    .score-button-container {
+        display: flex
+    }
+
+    .responsive-items,
+    .responsive-post-footer-item,
+    .responsive-post-footer-score {
+        display: none;
+    }
+
+    .responsive-post-footer-button {
+        display: block;
+    }
+
+    .upper-header {
+        padding: 0 20px;
+    }
+
+    .dropdown-container {
+        width: 20%;
+        margin: 0 16px;
+    }
+
+    .options-button {
+        width: 70px;
+        margin: 7px 0 0 10px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .responsive-items {
+        display: inline-block;
+    }
+
+    .main-responsive-container {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .posts-container,
+    .lower-header-container {
+        width: 648px;
+    }
+
+    .responsive-sign-in,
+    .side-menu-container,
+    .filter-container,
+    .score-button-container {
+        display: flex
+    }
+
+    .large-screen-button {
+        width: 120px
+    }
+
+    .responsive-post-footer-item,
+    .responsive-post-footer-score {
+        display: none;
+    }
+
+    .responsive-post-footer-button {
+        display: block;
+    }
+
+    .upper-header {
+        padding: 0 20px;
+    }
+
+    .dropdown-container {
+        width: 20%;
+        margin: 0 16px;
+    }
+
+    .options-button {
+        width: 70px;
+        margin: 7px 0 0 10px;
+    }
+}

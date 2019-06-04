@@ -4,14 +4,13 @@ import { Nav, NavDropdown, Button, FormControl, Dropdown } from 'react-bootstrap
 import { IoMdPerson, IoIosMoon, IoIosRadioButtonOn, IoMdRose, IoMdHelpCircleOutline, IoMdLogOut, IoIosLogIn } from "react-icons/io"
 
 import './MoreOptions.css'
-// .font-size-14 .font-size-10 .font-weight-600 .btn are in ArrowDropDown.css
 
 const MoreOptions = () => {
     return (
         <Dropdown alignRight>
 
-            <Dropdown.Toggle variant="" className='options-button font-size-14 d-flex justify-content-around'>
-                <IoMdPerson className='text-secondary mr-2 options-icon options-toggle-icon' />
+            <Dropdown.Toggle variant="" className='options-button'>
+                <IoMdPerson className='text-secondary options-icon options-toggle-icon' />
             </Dropdown.Toggle>
 
             <Dropdown.Menu className='font-size-14'>

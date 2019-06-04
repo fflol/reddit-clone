@@ -1,12 +1,12 @@
 .filter-icons {
-    height: 1.3rem;
-    width: 1.3rem;
+    font-size: 1.3rem;
     color: black
 }
 
 .filter-container {
+    /* display: flex;     */
     border-right: 1px solid rgb(237, 239, 241);
-    margin: 9px 15px 0 10px;
+    margin: 6px 0px 0 10px;
     /* padding-right: 0px; */
     height: 28px;
 }

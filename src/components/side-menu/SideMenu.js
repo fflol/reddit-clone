@@ -13,7 +13,7 @@ import './SideMenu.css'
 
 function SideMenu() {
   return (
-    <aside className='d-flex flex-column side-menu-container'>
+    <aside className='flex-column side-menu-container'>
         <Feeds />
         <SidePlaceholder />
         <Premium />

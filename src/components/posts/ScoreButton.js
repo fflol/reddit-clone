@@ -6,7 +6,7 @@ import './ScoreButton.css'
 
 function ScoreButton() {
     return (
-        <div className='d-flex flex-column align-items-center score-button-container'>
+        <div className='score-button-container'>
             <button className='score-button'>
                 <IoMdArrowRoundUp className='score-icon' />
             </button>

@@ -5,6 +5,10 @@
     line-height: 16px;
 }
 
+.responsive-post-footer-score {
+    align-items: center;
+}
+
 .post-footer-button {
     background-color: inherit;
     border: 0;

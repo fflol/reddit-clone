@@ -1,4 +1,7 @@
 .score-button-container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
     width: 40px;
     background-color: #F8F9FA;
     padding: 8px 5px 0 5px;
