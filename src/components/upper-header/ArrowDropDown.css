@@ -1,5 +1,5 @@
-.dropdown-container {
-    /* width: 20%; */
+.capitalize {
+    text-transform: capitalize;
 }
 
 .font-size-14 {

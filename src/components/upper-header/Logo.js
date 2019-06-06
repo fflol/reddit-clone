@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap'
+import { Navbar } from 'react-bootstrap'
 
 import icon from '../../img/Reddit_logo_orange.svg'
 import text from '../../img/reddittext.svg'

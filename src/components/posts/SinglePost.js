@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IoMdPerson, IoIosMoon, IoIosRadioButtonOn, IoMdRose, IoMdHelpCircleOutline, IoMdLogOut, IoIosLogIn } from "react-icons/io"
+import { IoMdLogOut } from "react-icons/io"
 
 import ScoreButton from './ScoreButton'
 import PostTopBar from './PostTopBar'
@@ -17,7 +17,7 @@ function SinglePost() {
             <div>
                 <PostTopBar />
                 <h2 className='post-title'>CONGRATULATIONS ILLINOIS on the legalization of marijuana... And now a word from your employer...</h2>
-                <a href="https://i.imgur.com/5IR5NZ2.jpg" className='d-block my-2 ml-1' target="_blank">
+                <a href="https://i.imgur.com/5IR5NZ2.jpg" className='d-block my-2 ml-1' rel="noopener noreferrer" target="_blank">
                     i.imgur.com/5IR5NZ...
                     <IoMdLogOut className='text-primary' />
                 </a>

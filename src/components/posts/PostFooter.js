@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Dropdown, NavDropdown } from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
 
 import { IoIosText, IoIosShareAlt, IoMdAddCircleOutline, IoIosMore, IoIosFlag, IoIosRemoveCircleOutline, IoMdArrowRoundUp, IoMdArrowRoundDown  } from "react-icons/io";
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
 import './Filter.css'
 
-import { IoMdTrendingUp, IoIosPodium, IoIosCreate, IoIosRadioButtonOn, IoMdRose } from "react-icons/io"
+import { IoMdTrendingUp, IoIosPodium, IoIosCreate } from "react-icons/io"
 
 const Filter = () => {
     return (

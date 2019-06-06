@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormControl } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import './SearchBar.css'
 
 import {IoMdSearch} from "react-icons/io"

@@ -2,9 +2,7 @@ import React from 'react'
 
 import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
 
-import { IoMdPause, IoMdMenu, IoMdReorder } from "react-icons/io"
-import { FaEquals, FaBars, FaAlignJustify } from "react-icons/fa"
-import { MdReorder, MdViewAgenda, MdViewHeadline, MdMenu, MdDehaze } from "react-icons/md";
+import { MdReorder, MdViewAgenda } from "react-icons/md";
 import { GoThreeBars } from "react-icons/go";
 
 
@@ -15,7 +13,7 @@ const View = () => {
   return (
     <div className='d-flex align-items-center view-container'>
 
-      <span class='view-title'>VIEW</span>
+      <span className='view-title'>VIEW</span>
 
       <Nav.Link href="" className='p-0'>
         <OverlayTrigger placement='top' overlay={<Tooltip>Card</Tooltip>}>
