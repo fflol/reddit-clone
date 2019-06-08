@@ -51,6 +51,8 @@ const ArrowDropDown = ({ subreddit, chooseSubreddit }) => {
                             return all
                         case 'original':
                             return original
+                        default:
+                            return popular
                     }
                 })()}
             </Dropdown.Toggle>

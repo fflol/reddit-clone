@@ -1,11 +1,10 @@
 import { combineReducers } from 'redux'
-import { SUBREDDIT, SORT, CARD } from '../actions/actions'
+import { SUBREDDIT, SORT, VIEW, POSTS } from '../actions/actions'
 
 
 const subreddit = (state = 'popular', action) => {
     switch (action.type) {
         case SUBREDDIT:
-            console.log(action)
             return action.value
         default:
             return state;
@@ -23,11 +22,21 @@ const sort = (state = 'hot', action) => {
 
 const view = (state = 'card', action) => {
     switch (action.type) {
-        case CARD:
+        case VIEW:
             return action.value
         default:
             return state;
     }
 }
 
-export const reducer = combineReducers({ subreddit, sort, view })
+const posts = (state = [], action) => {
+    switch (action.type) {
+        case POSTS:
+            // console.log('reducing: ')
+            return action.value
+        default:
+            return state;
+    }
+}
+
+export const reducer = combineReducers({ subreddit, sort, view, posts })

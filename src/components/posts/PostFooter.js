@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Dropdown } from 'react-bootstrap'
 
-import { IoIosText, IoIosShareAlt, IoMdAddCircleOutline, IoIosMore, IoIosFlag, IoIosRemoveCircleOutline, IoMdArrowRoundUp, IoMdArrowRoundDown  } from "react-icons/io";
+import { IoIosText, IoIosShareAlt, IoMdAddCircleOutline, IoIosMore, IoIosFlag, IoIosRemoveCircleOutline, IoMdArrowRoundUp, IoMdArrowRoundDown } from "react-icons/io";
 
 
 import './PostFooter.css'
 
-function PostFooter() {
+function PostFooter({ commentsNum }) {
     return (
         <div className='d-flex post-footer-container'>
 
@@ -15,7 +15,7 @@ function PostFooter() {
                 <button className='score-button'>
                     <IoMdArrowRoundUp className='score-icon' />
                 </button>
-                <span className='score-number'>35</span>
+                <span className='score-number'>{commentsNum}</span>
                 <button className='score-button'>
                     <IoMdArrowRoundDown className='score-icon' />
                 </button>
@@ -23,7 +23,7 @@ function PostFooter() {
 
             <a href='' className='post-footer-button'>
                 <IoIosText className='post-footer-icon' />
-                <span>3.2k comments</span>
+                <span>{commentsNum} comments</span>
             </a>
 
             <a href='' className='post-footer-button responsive-post-footer-button'>

@@ -6,27 +6,33 @@ import ScoreButton from './ScoreButton'
 import PostTopBar from './PostTopBar'
 import PostFooter from './PostFooter'
 
-
 import './SinglePost.css'
 
 
-function SinglePost() {
+function SinglePost({ post }) {
+    const ups = post.ups
+    const subreddit = post.subreddit_name_prefixed
+    const authorName = post.author.name
+    const createdTimeUnix = post.created
+    const title = post.title
+    const selfText = post.selftext
+    const url = post.url
+    const commentsNum = post.num_comments
+    const barParams = {subreddit, authorName, createdTimeUnix}
+
     return (
         <div className='d-flex single-post-container'>
-            <ScoreButton />
+            <ScoreButton ups={ups} />
             <div>
-                <PostTopBar />
-                <h2 className='post-title'>CONGRATULATIONS ILLINOIS on the legalization of marijuana... And now a word from your employer...</h2>
-                <a href="https://i.imgur.com/5IR5NZ2.jpg" className='d-block my-2 ml-1' rel="noopener noreferrer" target="_blank">
-                    i.imgur.com/5IR5NZ...
+                <PostTopBar barParams={barParams} />
+                <h2 className='post-title'>{title}</h2>
+                <p>{selfText}</p>
+                <a href={url} className='d-block my-2 ml-1' rel="noopener noreferrer" target="_blank">
+                    {url}
                     <IoMdLogOut className='text-primary' />
                 </a>
-                <img 
-                    src="https://external-preview.redd.it/Bf2GdlErxg0fG5E3ljd7ZuVm8Fpk5qQGEsUzUZG-ARw.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=78a61296d781ca92f1abb0fc222e275301370743" 
-                    alt=""
-                    className='single-post-img'
-                />
-                <PostFooter />
+                <img src={url} alt="" className='single-post-img' />
+                <PostFooter commentsNum={commentsNum} />
             </div>
         </div>
     );
