@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/reddit-clone/static/css/main.ebb06ad6.chunk.css",
+    "main.js": "/reddit-clone/static/js/main.aa56ca3d.chunk.js",
+    "main.js.map": "/reddit-clone/static/js/main.aa56ca3d.chunk.js.map",
+    "runtime~main.js": "/reddit-clone/static/js/runtime~main.483c9ea0.js",
+    "runtime~main.js.map": "/reddit-clone/static/js/runtime~main.483c9ea0.js.map",
+    "static/js/2.81a48ba5.chunk.js": "/reddit-clone/static/js/2.81a48ba5.chunk.js",
+    "static/js/2.81a48ba5.chunk.js.map": "/reddit-clone/static/js/2.81a48ba5.chunk.js.map",
+    "index.html": "/reddit-clone/index.html",
+    "precache-manifest.5d89795def6fb20a2d07c1db2c51a2f2.js": "/reddit-clone/precache-manifest.5d89795def6fb20a2d07c1db2c51a2f2.js",
+    "service-worker.js": "/reddit-clone/service-worker.js",
+    "static/css/main.ebb06ad6.chunk.css.map": "/reddit-clone/static/css/main.ebb06ad6.chunk.css.map",
+    "static/media/Reddit_logo_orange.svg": "/reddit-clone/static/media/Reddit_logo_orange.e03328ce.svg",
+    "static/media/Feeds.css": "/reddit-clone/static/media/banner@2x.34dbc917.png",
+    "static/media/reddittext.svg": "/reddit-clone/static/media/reddittext.ae56e979.svg"
+  }
+}
