@@ -11,7 +11,6 @@ import './ArrowDropDown.css'
 
 
 const ArrowDropDown = ({ subreddit, chooseSubreddit }) => {
-    // console.log(props)
 
     const handleSelect = (eventKey) => {
         chooseSubreddit(eventKey)
@@ -62,15 +61,24 @@ const ArrowDropDown = ({ subreddit, chooseSubreddit }) => {
                 <Dropdown.Header className='font-size-10'>REDDIT FEEDS</Dropdown.Header>
 
                 <NavDropdown.Item eventKey='popular' onSelect={handleSelect}>
-                    {popular}
+                    <span>
+                        <IoMdTrendingUp className='text-primary pr-1 dropdown-icons' />
+                        <span className='capitalize'>popular</span>
+                    </span>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item eventKey='all' onSelect={handleSelect}>
-                    {all}
+                    <span>
+                        <IoIosPodium className='text-primary pr-1 dropdown-icons' />
+                        <span className='capitalize'>all</span>
+                    </span>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item eventKey='original' onSelect={handleSelect}>
-                    {original}
+                    <span>
+                        <IoIosCreate className='text-primary pr-1 dropdown-icons' />
+                        <span className='capitalize'>original content</span>
+                    </span>
                 </NavDropdown.Item>
 
                 <Dropdown.Header className='font-size-10'>OTHER</Dropdown.Header>
@@ -99,4 +107,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {chooseSubreddit})(ArrowDropDown)
+export default connect(mapStateToProps, { chooseSubreddit })(ArrowDropDown)

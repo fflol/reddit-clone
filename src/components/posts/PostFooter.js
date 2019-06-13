@@ -7,7 +7,10 @@ import { IoIosText, IoIosShareAlt, IoMdAddCircleOutline, IoIosMore, IoIosFlag, I
 
 import './PostFooter.css'
 
-function PostFooter({ commentsNum }) {
+function PostFooter({ footerParams }) {
+
+    const { permalink, convertedUps, convertedComments } = footerParams
+
     return (
         <div className='d-flex post-footer-container'>
 
@@ -15,23 +18,23 @@ function PostFooter({ commentsNum }) {
                 <button className='score-button'>
                     <IoMdArrowRoundUp className='score-icon' />
                 </button>
-                <span className='score-number'>{commentsNum}</span>
+                <span className='score-number'>{convertedUps}</span>
                 <button className='score-button'>
                     <IoMdArrowRoundDown className='score-icon' />
                 </button>
             </div>
 
-            <a href='' className='post-footer-button'>
+            <a href={`https://www.reddit.com${permalink}#CommentSort--SortPicker`} className='post-footer-button' rel="noopener noreferrer" target="_blank">
                 <IoIosText className='post-footer-icon' />
-                <span>{commentsNum} comments</span>
+                <span>{convertedComments} comments</span>
             </a>
 
-            <a href='' className='post-footer-button responsive-post-footer-button'>
+            <a className='post-footer-button responsive-post-footer-button'>
                 <IoIosShareAlt className='post-footer-icon' />
                 <span>Share</span>
             </a>
 
-            <a href='' className='post-footer-button responsive-post-footer-button'>
+            <a className='post-footer-button responsive-post-footer-button'>
                 <IoMdAddCircleOutline className='post-footer-icon' />
                 <span>Save</span>
             </a>
@@ -44,28 +47,28 @@ function PostFooter({ commentsNum }) {
 
                 <Dropdown.Menu className='post-footer-dropdown-menu'>
 
-                    <Dropdown.Item href="" className='post-footer-item responsive-post-footer-item'>
+                    <Dropdown.Item className='post-footer-item responsive-post-footer-item'>
                         <IoIosShareAlt className='post-footer-icon' />
                         <span>Share</span>
                     </Dropdown.Item>
 
                     <Dropdown.Divider className='responsive-post-footer-item' />
 
-                    <Dropdown.Item href="" className='post-footer-item responsive-post-footer-item'>
+                    <Dropdown.Item className='post-footer-item responsive-post-footer-item'>
                         <IoMdAddCircleOutline className='post-footer-icon' />
                         <span>Save</span>
                     </Dropdown.Item>
 
                     <Dropdown.Divider className='responsive-post-footer-item' />
 
-                    <Dropdown.Item href="" className='post-footer-item'>
+                    <Dropdown.Item className='post-footer-item'>
                         <IoIosFlag className='post-footer-icon' />
                         <span>Hide</span>
                     </Dropdown.Item>
 
                     <Dropdown.Divider />
 
-                    <Dropdown.Item href="" className='post-footer-item'>
+                    <Dropdown.Item className='post-footer-item'>
                         <IoIosRemoveCircleOutline className='post-footer-icon' />
                         <span>Report</span>
                     </Dropdown.Item>

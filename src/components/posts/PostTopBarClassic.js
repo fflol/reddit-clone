@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { OverlayTrigger, Button, Tooltip } from 'react-bootstrap'
+import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 
 import './PostTopBar.css'
 
@@ -22,10 +22,11 @@ function PostTopBar({ barParams, className }) {
     const timePassed = diffHours(createdTime, new Date())
 
     return (
-        <div className={`d-flex justify-content-between post-top-bar-container ${className}`}>
+        <div className={`d-flex justify-content-between my-0 post-top-bar-container ${className}`}>
 
             <div className='d-flex mt-1'>
 
+                <span></span>
                 <span className='top-bar-overlay font-weight-700'>{subreddit}</span>
                 <span className='top-bar-overlay'>&nbsp;u/{authorName}&nbsp;</span>
                 {/* <OverlayTrigger
@@ -54,7 +55,7 @@ function PostTopBar({ barParams, className }) {
 
             </div>
 
-            <Button className='top-bar-join-button'>+JOIN</Button>
+            {/* <Button className='top-bar-join-button'>+JOIN</Button> */}
 
         </div>
     );

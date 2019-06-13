@@ -1,5 +1,7 @@
-.post-top-bar-container{
+.post-top-bar-container {
     margin: 8px 8px 15px 5px;
+    z-index: 5;
+    position: relative;
 }
 
 
@@ -17,12 +19,21 @@
     font-weight: 700;
 }
 
+.top-bar-time-window {
+    font-size: 12px;
+}
+
+/* .top-bar-overlay {
+    z-index: 5;
+    position: relative;
+} */
+
 .top-bar-overlay:hover {
     text-decoration: underline;
 }
 
 .popover {
-    margin-top: -5px; 
+    margin-top: -5px;
 }
 
 .popover .arrow {

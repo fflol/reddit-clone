@@ -8,4 +8,4 @@ export const oauthInfo = {
   redirect_uri: "http://localhost:3000/"
 }
 
-const accessToken = '230433376741-xFSfzN19ZGkv7tseEmfC23MpV38'
+// const accessToken = '230433376741-xFSfzN19ZGkv7tseEmfC23MpV38'

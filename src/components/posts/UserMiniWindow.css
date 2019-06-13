@@ -1,9 +1,7 @@
-/* 
-.user-mini-window {
-    position: absolute;
-    will-change: transform;
-    top: 0px;
-    left: 0px;
-    transform: translate3d(1008px, 37px, 0px);
+.user-mini-window-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(28, 28, 28);
+    line-height: 20px;
+    text-decoration: none;
 }
- */

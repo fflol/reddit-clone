@@ -8,13 +8,14 @@ import SideMenu from './components/side-menu/SideMenu'
 import { store } from './store/store'
 
 import './responsive.css'
+import './App.css'
 
 
 function App() {
   return (
     <Provider store={store}>
       <Header />
-      <div className='d-flex justify-content-center main-responsive-container'>
+      <div className='main-container main-responsive-container'>
         <Posts />
         <SideMenu />
       </div>

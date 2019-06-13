@@ -11,16 +11,22 @@ import { Button } from 'react-bootstrap'
 import './SideMenu.css'
 
 
-function SideMenu() {
+
+const SideMenu = () => {
+
+  const handleClick = () => {
+    document.documentElement.scrollTop = 0
+  }
+
   return (
     <aside className='flex-column side-menu-container'>
-        <Feeds />
-        <SidePlaceholder />
-        <Premium />
-        <TrendingCommunities/>
-        <SidePlaceholder />
-        <Footer />
-        <Button className='back-to-top'>back to top</Button>
+      <Feeds />
+      <SidePlaceholder />
+      <Premium />
+      <TrendingCommunities />
+      <SidePlaceholder />
+      <Footer />
+      <Button onClick={handleClick} className='back-to-top'>back to top</Button>
     </aside>
   );
 }

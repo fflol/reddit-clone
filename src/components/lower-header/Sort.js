@@ -28,6 +28,8 @@ const Sort = ({ sort, chooseSort }) => {
         return <IoIosPodium className='sort-icon' />
       case 'rising':
         return <IoMdTrendingUp className='sort-icon' />
+      default:
+        return
     }
   }
 

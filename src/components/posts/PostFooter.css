@@ -3,6 +3,8 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
+    z-index: 5;
+    position: relative;
 }
 
 .responsive-post-footer-score {

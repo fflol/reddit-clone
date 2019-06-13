@@ -7,10 +7,10 @@ function LowerFooter() {
     return (
         <div className='mt-3 text-center'>
             <div>
-                <a href="" className='footer-text'>content policy | privacy policy</a>
+                <a href="https://www.reddit.com/help/contentpolicy" className='footer-text'>content policy | privacy policy</a>
             </div>
             <div>
-                <a href="" className='footer-text'>user agreement | mod policy</a>
+                <a href="https://www.reddit.com/help/useragreement" className='footer-text'>user agreement | mod policy</a>
             </div>
             <div>
                 <span className='footer-text'>© 2019 Reddit, Inc. All rights reserved</span>

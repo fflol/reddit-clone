@@ -1,65 +1,90 @@
 import snoowrap from 'snoowrap'
 
-import { storePosts } from './actions'
+import { storePosts, storeTrendingCommunities, switchFetching } from './actions'
 import { oauthInfo } from '../oauthInfo'
 
-const r = new snoowrap(oauthInfo)
+export const r = new snoowrap(oauthInfo)
 
 
-export const asyncFetchPosts = (subreddit, sort) => {
-    console.log('fetch posts fired |', subreddit, sort)
+export const asyncFetchPosts = (subreddit, sort, page) => {
     switch (sort) {
         case 'hot':
             return dispatch => {
-                return r.getHot(subreddit, { limit: 15 })
-                    .then(res => dispatch(storePosts(res)))
-                    .catch(err => dispatch(console.log(err)))
+                dispatch(switchFetching())
+                return r.getHot(subreddit, { limit: 10 * page })
+                    .then(res => {
+                        dispatch(switchFetching())
+                        dispatch(storePosts(res))
+                    })
+                    .catch(err => console.log(err))
             }
         case 'new':
             return dispatch => {
-                return r.getNew(subreddit, { limit: 15 })
-                    .then(res => dispatch(storePosts(res)))
-                    .catch(err => dispatch(console.log(err)))
+                dispatch(switchFetching())
+                return r.getNew(subreddit, { limit: 10 * page })
+                    .then(res => {
+                        dispatch(switchFetching())
+                        dispatch(storePosts(res))
+                    })
+                    .catch(err => console.log(err))
             }
         case 'controversial':
             return dispatch => {
-                return r.getControversial(subreddit, { limit: 15 })
-                    .then(res => dispatch(storePosts(res)))
-                    .catch(err => dispatch(console.log(err)))
+                dispatch(switchFetching())
+                return r.getControversial(subreddit, { limit: 10 * page })
+                    .then(res => {
+                        dispatch(switchFetching())
+                        dispatch(storePosts(res))
+                    })
+                    .catch(err => console.log(err))
             }
         case 'top':
             return dispatch => {
-                return r.getTop(subreddit, { limit: 15 })
-                    .then(res => dispatch(storePosts(res)))
-                    .catch(err => dispatch(console.log(err)))
+                dispatch(switchFetching())
+                return r.getTop(subreddit, { limit: 10 * page })
+                    .then(res => {
+                        dispatch(switchFetching())
+                        dispatch(storePosts(res))
+                    })
+                    .catch(err => console.log(err))
             }
         case 'rising':
             return dispatch => {
-                return r.getRising(subreddit, { limit: 15 })
-                    .then(res => dispatch(storePosts(res)))
-                    .catch(err => dispatch(console.log(err)))
+                dispatch(switchFetching())
+                return r.getRising(subreddit, { limit: 10 * page })
+                    .then(res => {
+                        dispatch(switchFetching())
+                        dispatch(storePosts(res))
+                    })
+                    .catch(err => console.log(err))
             }
         default:
-            console.log('default returned')
             return
     }
 }
 
 
-// export const get5DayAsnc = (location) => {
-//     console.log('get hourly asnc fired')
-//     return dispatch => {
-//         return axios
-//             .get(
-//                 link5Day,
-//                 {
-//                     params: {
-//                         lat: location.lat,
-//                         lon: location.lon,
-//                         appid: id
-//                     }
-//                 })
-//             .then((res) => dispatch(get5Day(res)))
-//             .catch((err) => dispatch(errorCatch(err)))
-//     }
-// }
+export const asyncFetchTrendingCommunities = () => {
+    return dispatch => {
+        return r.getPopularSubreddits({ limit: 5 })
+            .then(res => dispatch(storeTrendingCommunities(res)))
+            .catch(err => console.log(err))
+    }
+}
+
+
+export const asyncSearch = (input) => {
+    return dispatch => {
+        dispatch(switchFetching())
+        return r.search({
+            query: input,
+            limit: 15,
+            sort: 'top'
+        })
+            .then(res => {
+                dispatch(switchFetching())
+                dispatch(storePosts(res))
+            })
+            .catch(err => console.log(err))
+    }
+}

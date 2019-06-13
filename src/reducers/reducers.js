@@ -1,6 +1,15 @@
 import { combineReducers } from 'redux'
-import { SUBREDDIT, SORT, VIEW, POSTS } from '../actions/actions'
+import { SWITCH_FETCHING, SUBREDDIT, SORT, VIEW, POSTS, TRENDING_COMMUNITIES, INCREASE_PAGE, RESETE_PAGE } from '../actions/actions'
 
+
+const fetching = (state = false, action) => {
+    switch (action.type) {
+        case SWITCH_FETCHING:
+            return !state
+        default:
+            return state;
+    }
+}
 
 const subreddit = (state = 'popular', action) => {
     switch (action.type) {
@@ -29,14 +38,33 @@ const view = (state = 'card', action) => {
     }
 }
 
+const page = (state = 1, action) => {
+    switch (action.type) {
+        case INCREASE_PAGE:
+            return state + 1
+        case RESETE_PAGE:
+            return 1
+        default:
+            return state
+    }
+}
+
 const posts = (state = [], action) => {
     switch (action.type) {
         case POSTS:
-            // console.log('reducing: ')
             return action.value
         default:
             return state;
     }
 }
 
-export const reducer = combineReducers({ subreddit, sort, view, posts })
+const trendingCommunities = (state = [], action) => {
+    switch (action.type) {
+        case TRENDING_COMMUNITIES:
+            return action.value
+        default:
+            return state;
+    }
+}
+
+export const reducer = combineReducers({ fetching, subreddit, sort, view, page, posts, trendingCommunities })

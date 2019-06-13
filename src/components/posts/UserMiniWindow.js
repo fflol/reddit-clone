@@ -3,12 +3,25 @@ import React from 'react';
 import './UserMiniWindow.css'
 
 
-function UserMiniWindow() {
+// not finished
+const UserMiniWindow = () => {
     return (
-        <div className='user-mini-window'>
-            author mini window
+        <div>
+            <a className='user-mini-window-title'>author mini window</a>
+            <div className=''>
+                <div>
+                    <span>23.1m</span>
+                    <span>members</span>
+                </div>
+                <div>
+                    <span>70.5k</span>
+                    <span>online</span>
+                </div>
+                <span></span>
+
+            </div>
         </div>
-    );
+    )
 }
 
 export default UserMiniWindow;

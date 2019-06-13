@@ -9,7 +9,7 @@ import './Feeds.css'
 
 function Feeds() {
     return (
-        <RedditCard>
+        <RedditCard className='mt-0'>
             <div className='feeds-landscape'></div>
             <div className='d-flex feeds-guy-container'>
                 <div className='feeds-guy-icon'></div>
