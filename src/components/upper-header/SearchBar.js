@@ -1,14 +1,22 @@
 import React from 'react';
-import { Form } from 'react-bootstrap'
-import { connect } from 'react-redux'
 
+// import react-bootstrap components
+import { Form } from 'react-bootstrap'
+
+// import icons
 import { IoMdSearch } from "react-icons/io"
 
+// import actions 
 import { asyncSearch } from '../../actions/snoowrapActions'
 
+// import redux components
+import { connect } from 'react-redux'
+
+// import css
 import './SearchBar.css'
 
 
+// components
 const SearchBar = ({ asyncSearch }) => {
 
   let input = ''
@@ -17,6 +25,7 @@ const SearchBar = ({ asyncSearch }) => {
     e.preventDefault()
     asyncSearch(input.value)
   }
+
 
   return (
     <div className='search-container flex-grow-1 d-flex'>
@@ -29,9 +38,6 @@ const SearchBar = ({ asyncSearch }) => {
 }
 
 
-const mapStateToProps = (state) => {
-  return {
-  }
-}
+const mapStateToProps = () => {}
 
 export default connect(mapStateToProps, { asyncSearch })(SearchBar)

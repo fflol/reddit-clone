@@ -1,15 +1,23 @@
 import React from 'react';
+
+// import react-bootstrap components
 import { NavDropdown, Dropdown } from 'react-bootstrap'
 
+// import components
 import { chooseSubreddit } from '../../actions/actions'
-import { connect } from 'react-redux'
-
 import { CustomMenu } from '../customComponents'
+
+// import 
 import { IoMdTrendingUp, IoIosPodium, IoIosCreate, IoIosRadioButtonOn, IoMdRose } from "react-icons/io"
 
+// import redux components
+import { connect } from 'react-redux'
+
+// import css
 import './ArrowDropDown.css'
 
 
+// component
 const ArrowDropDown = ({ subreddit, chooseSubreddit }) => {
 
     const handleSelect = (eventKey) => {

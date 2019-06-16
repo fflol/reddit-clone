@@ -1,10 +1,24 @@
 import React from 'react';
+
+// import react-bootstrap components
 import { NavDropdown, Dropdown } from 'react-bootstrap'
 
-import { IoMdPerson, IoIosMoon, IoIosRadioButtonOn, IoMdRose, IoMdHelpCircleOutline, IoMdLogOut, IoIosLogIn } from "react-icons/io"
+// import icons
+import { 
+    IoMdPerson, 
+    IoIosMoon, 
+    IoIosRadioButtonOn, 
+    IoMdRose, 
+    IoMdHelpCircleOutline, 
+    IoMdLogOut, 
+    IoIosLogIn 
+} from "react-icons/io"
 
+// import css
 import './MoreOptions.css'
 
+
+// components
 const MoreOptions = () => {
     return (
         <Dropdown alignRight>

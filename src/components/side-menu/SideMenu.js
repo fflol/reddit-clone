@@ -1,17 +1,20 @@
 import React from 'react';
 
+// import react-bootstrap components
+import { Button } from 'react-bootstrap'
+
+// import componets
 import Feeds from './Feeds';
 import SidePlaceholder from './SidePlaceholder'
 import Premium from './Premium'
 import TrendingCommunities from './TrendingCommunities'
 import Footer from './Footer'
 
-import { Button } from 'react-bootstrap'
-
+// import css
 import './SideMenu.css'
 
 
-
+// component
 const SideMenu = () => {
 
   const handleClick = () => {

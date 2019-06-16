@@ -3,7 +3,6 @@ import React from 'react'
 import { FormControl } from 'react-bootstrap'
 
 import './customComponents.css'
-// .font-size-14 is in ArrowDropDown.css
 
 
 

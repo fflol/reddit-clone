@@ -1,12 +1,25 @@
 import React from 'react';
 
+// import react-bootstrap components
 import { Dropdown } from 'react-bootstrap'
 
-import { IoIosText, IoIosShareAlt, IoMdAddCircleOutline, IoIosMore, IoIosFlag, IoIosRemoveCircleOutline, IoMdArrowRoundUp, IoMdArrowRoundDown } from "react-icons/io";
+// import icons
+import {
+    IoIosText,
+    IoIosShareAlt,
+    IoMdAddCircleOutline,
+    IoIosMore,
+    IoIosFlag,
+    IoIosRemoveCircleOutline,
+    IoMdArrowRoundUp,
+    IoMdArrowRoundDown
+} from "react-icons/io";
 
-
+// import css
 import './PostFooter.css'
 
+
+// component
 function PostFooter({ footerParams }) {
 
     const { permalink, convertedUps, convertedComments } = footerParams
@@ -74,10 +87,10 @@ function PostFooter({ footerParams }) {
                     </Dropdown.Item>
 
                 </Dropdown.Menu>
-
             </Dropdown>
-
         </div>
+
+
     );
 }
 

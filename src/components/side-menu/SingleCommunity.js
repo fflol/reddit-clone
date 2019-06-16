@@ -1,17 +1,16 @@
 import React from 'react';
 
+// import react-bootstrap components
 import { Button } from 'react-bootstrap'
 
+// import css
 import './SingleCommunity.css'
 
-
-function convertNums(x) {
-    if (x > 1000000) return (x * 0.000001).toFixed(1) + 'm'
-    if (x > 1000) return (x * 0.001).toFixed(1) + 'k'
-    return x
-}
+// import supportive funcs
+import { convertNums } from '../../supportive'
 
 
+// component
 function SingleCommunity({ icon_img, display_name_prefixed, subscribers }) {
 
     const convertedSubscribers = convertNums(subscribers)

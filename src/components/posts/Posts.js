@@ -1,18 +1,35 @@
 import React, { useEffect } from 'react';
-import { connect } from 'react-redux'
-import InfiniteScroll from "react-infinite-scroll-component";
 
-import { asyncFetchPosts } from '../../actions/snoowrapActions'
-import { increasePage, resetPage } from '../../actions/actions'
-
+// import components
 import SinglePostCard from './SinglePostCard';
 import SinglePostClassic from './SinglePostClassic';
 
+// import redux components
+import { connect } from 'react-redux'
+
+// import actions
+import { asyncFetchPosts } from '../../actions/snoowrapActions'
+import { increasePage, resetPage } from '../../actions/actions'
+
+// import infinite scroll
+import InfiniteScroll from "react-infinite-scroll-component";
+
+// import css
 import './Posts.css'
 
 
-// component -------------------------------------
-const Posts = ({ subreddit, sort, asyncFetchPosts, page, posts, view, fetching, resetPage, increasePage }) => {
+// component 
+const Posts = ({
+  subreddit,
+  sort,
+  asyncFetchPosts,
+  page,
+  posts,
+  view,
+  fetching,
+  resetPage,
+  increasePage
+}) => {
 
   useEffect(() => {
     resetPage()

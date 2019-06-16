@@ -1,22 +1,19 @@
 import React from 'react';
 
-import { IoMdLogOut, IoIosImage } from "react-icons/io"
-
+// import components
 import ScoreButton from './ScoreButton'
 import PostTopBarClassic from './PostTopBarClassic'
 import PostFooter from './PostFooter'
 
+// import icon
+import { IoMdLogOut, IoIosImage } from "react-icons/io"
+
+// import css
 import './SinglePostClassic.css'
 
+// import supportive funcs
+import { convertNums } from '../../supportive'
 
-// supportive functions ------------------------
-
-function convertNums(x) {
-    if (x > 1000) {
-        return (x * 0.001).toFixed(1) + 'k'
-    }
-    return x
-}
 
 // component ------------------------
 const SinglePostClassic = ({ post }) => {
@@ -32,6 +29,7 @@ const SinglePostClassic = ({ post }) => {
     const convertedComments = convertNums(post.num_comments)
     const footerParams = { convertedUps, convertedComments }
 
+    
     const checkThumbnail = (thumbnail) => {
         if (thumbnail !== 'self' &&
             thumbnail !== 'default' &&

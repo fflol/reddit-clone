@@ -1,29 +1,18 @@
 import React from 'react';
 
-import { IoMdLogOut } from "react-icons/io"
-
+// import components
 import ScoreButton from './ScoreButton'
 import PostTopBar from './PostTopBar'
 import PostFooter from './PostFooter'
 
+// import icons
+import { IoMdLogOut } from "react-icons/io"
+
+// import css
 import './SinglePostCard.css'
 
-
-// supportive functions -----------------------------------------------
-function checkURL(url) {
-    return (url.match(/\.(jpeg|jpg|gif|png)$/) != null);
-}
-
-// function htmlDecode(input) {
-//     const doc = new DOMParser().parseFromString(input, "text/html");
-//     return doc.documentElement.lastChild.innerHTML.replace('allowfullscreen', 'allowFullScreen').replace('class', 'className');
-// }
-
-function convertNums(x) {
-    if (x > 1000000) return (x * 0.000001).toFixed(1) + 'm'
-    if (x > 1000) return (x * 0.001).toFixed(1) + 'k'
-    return x
-}
+// import supportive funcs
+import { checkURL, convertNums } from '../../supportive'
 
 
 // component ---------------------------------------------------------

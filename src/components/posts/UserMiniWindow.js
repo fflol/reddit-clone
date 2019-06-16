@@ -3,7 +3,7 @@ import React from 'react';
 import './UserMiniWindow.css'
 
 
-// not finished
+// not finished, not been used
 const UserMiniWindow = () => {
     return (
         <div>

@@ -1,15 +1,20 @@
 import React, { useEffect } from 'react';
 
-import { connect } from 'react-redux'
-
+// import components
 import { RedditCard } from '../customComponents'
 import SingleCommunity from './SingleCommunity'
 
+// import redux components
+import { connect } from 'react-redux'
+
+// import actions
 import { asyncFetchTrendingCommunities } from '../../actions/snoowrapActions'
 
+// import css
 import './TrendingCommunities.css'
 
 
+// component
 const TrendingCommunities = ({ trendingCommunities, asyncFetchTrendingCommunities }) => {
 
     useEffect(() => {
@@ -33,5 +38,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-//   export default connect(mapStateToProps)(TrendingCommunities)
 export default connect(mapStateToProps, { asyncFetchTrendingCommunities })(TrendingCommunities)

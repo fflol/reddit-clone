@@ -1,15 +1,22 @@
 import React from 'react';
+
+// import react-bootstrap compoents
 import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
 
+// import components
 import { chooseSubreddit } from '../../actions/actions'
-import { connect } from 'react-redux'
 
+// import icons
 import { IoMdTrendingUp, IoIosPodium, IoIosCreate } from "react-icons/io"
 
+// import redux components
+import { connect } from 'react-redux'
+
+// import css
 import './Filter.css'
 
 
-
+// component
 const Filter = ({ chooseSubreddit }) => {
 
     const handleSelect = (eventKey) => {
@@ -43,10 +50,6 @@ const Filter = ({ chooseSubreddit }) => {
 
 
 
-const mapStateToProps = (state) => {
-    return {
-        
-    }
-}
+const mapStateToProps = () => { }
 
 export default connect(mapStateToProps, { chooseSubreddit })(Filter)

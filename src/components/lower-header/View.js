@@ -1,18 +1,23 @@
 import React from 'react'
 
+// import react-bootstrap component
 import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
 
-import { connect } from 'react-redux'
-
-import { chooseView } from '../../actions/actions'
-
+// import icons
 import { MdReorder, MdViewAgenda } from "react-icons/md";
 import { GoThreeBars } from "react-icons/go";
 
+// import redux components
+import { connect } from 'react-redux'
 
+// import actions
+import { chooseView } from '../../actions/actions'
+
+// import css
 import './View.css'
 
 
+// conponent
 const View = ({ view, chooseView }) => {
 
   const handleSelect = (eventKey) => {
@@ -23,6 +28,7 @@ const View = ({ view, chooseView }) => {
   const classicColorClass = view === 'classic' ? 'text-primary' : 'light-blue'
   const compactColorClass = view === 'compact' ? 'text-primary' : 'light-blue'
 
+  
   return (
     <div className='d-flex align-items-center view-container'>
 

@@ -1,15 +1,22 @@
 import React from 'react'
-import { connect } from 'react-redux'
 
+// import react-bootstrap component
 import { NavDropdown, Dropdown } from 'react-bootstrap'
 
-import { chooseSort } from '../../actions/actions'
-
+// import icons
 import { IoIosBonfire, IoIosStar, IoIosThunderstorm, IoIosPodium, IoMdTrendingUp, } from "react-icons/io"
 
+// import redux components
+import { connect } from 'react-redux'
+
+// import actions
+import { chooseSort } from '../../actions/actions'
+
+// import css
 import './Sort.css'
 
 
+// component
 const Sort = ({ sort, chooseSort }) => {
 
   const handleSelect = (eventKey) => {
