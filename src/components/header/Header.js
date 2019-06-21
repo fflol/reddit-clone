@@ -3,15 +3,17 @@ import React from 'react';
 import UpperHeader from './upper-header/UpperHeader';
 import LowerHeader from './lower-header/LowerHeader';
 
-import './Header.css'
+// import './Header.css'
+
+import { HeaderContainer } from './headerStyle'
 
 
 function Header() {
   return (
-    <header className='header-container'>
-        <UpperHeader />
-        <LowerHeader />
-    </header>
+    <HeaderContainer>
+      <UpperHeader />
+      <LowerHeader />
+    </HeaderContainer>
   );
 }
 

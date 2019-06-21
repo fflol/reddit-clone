@@ -4,7 +4,7 @@ import React from 'react';
 import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
 
 // import components
-import { chooseSubreddit } from '../../actions/actions'
+import { chooseSubreddit } from '../../../actions/actions'
 
 // import icons
 import { IoMdTrendingUp, IoIosPodium, IoIosCreate } from "react-icons/io"

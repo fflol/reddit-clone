@@ -11,7 +11,7 @@ import { GoThreeBars } from "react-icons/go";
 import { connect } from 'react-redux'
 
 // import actions
-import { chooseView } from '../../actions/actions'
+import { chooseView } from '../../../actions/actions'
 
 // import css
 import './View.css'

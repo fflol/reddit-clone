@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap'
 
-import icon from '../../img/Reddit_logo_orange.svg'
-import text from '../../img/reddittext.svg'
+import icon from '../../../img/Reddit_logo_orange.svg'
+import text from '../../../img/reddittext.svg'
 
 
 const Logo = () => {

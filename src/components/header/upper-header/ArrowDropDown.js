@@ -4,8 +4,8 @@ import React from 'react';
 import { NavDropdown, Dropdown } from 'react-bootstrap'
 
 // import components
-import { chooseSubreddit } from '../../actions/actions'
-import { CustomMenu } from '../customComponents'
+import { chooseSubreddit } from '../../../actions/actions'
+import { CustomMenu } from '../../customComponents'
 
 // import 
 import { IoMdTrendingUp, IoIosPodium, IoIosCreate, IoIosRadioButtonOn, IoMdRose } from "react-icons/io"

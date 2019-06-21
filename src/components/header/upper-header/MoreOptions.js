@@ -4,18 +4,21 @@ import React from 'react';
 import { NavDropdown, Dropdown } from 'react-bootstrap'
 
 // import icons
-import { 
-    IoMdPerson, 
-    IoIosMoon, 
-    IoIosRadioButtonOn, 
-    IoMdRose, 
-    IoMdHelpCircleOutline, 
-    IoMdLogOut, 
-    IoIosLogIn 
+import {
+    IoMdPerson,
+    IoIosMoon,
+    IoIosRadioButtonOn,
+    IoMdRose,
+    IoMdHelpCircleOutline,
+    IoMdLogOut,
+    IoIosLogIn
 } from "react-icons/io"
 
 // import css
 import './MoreOptions.css'
+
+// import styled components
+import { moreOptionsDropdownToggle } from './moreOptionsStyle'
 
 
 // components
@@ -23,9 +26,11 @@ const MoreOptions = () => {
     return (
         <Dropdown alignRight>
 
+            {/* <moreOptionsDropdownToggle> */}
             <Dropdown.Toggle variant="" className='options-button'>
                 <IoMdPerson className='text-secondary options-icon options-toggle-icon' />
             </Dropdown.Toggle>
+            {/* </moreOptionsDropdownToggle> */}
 
             <Dropdown.Menu className='font-size-14'>
 
@@ -63,7 +68,7 @@ const MoreOptions = () => {
                     <IoIosLogIn className='text-secondary mr-2 options-icon' />
                     Log In / Sign Up
                 </NavDropdown.Item>
-                
+
             </Dropdown.Menu>
         </Dropdown>
     )

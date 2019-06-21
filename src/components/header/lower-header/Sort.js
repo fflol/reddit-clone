@@ -10,7 +10,7 @@ import { IoIosBonfire, IoIosStar, IoIosThunderstorm, IoIosPodium, IoMdTrendingUp
 import { connect } from 'react-redux'
 
 // import actions
-import { chooseSort } from '../../actions/actions'
+import { chooseSort } from '../../../actions/actions'
 
 // import css
 import './Sort.css'
