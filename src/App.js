@@ -21,8 +21,8 @@ function App() {
       <Header />
       <HorizontalContainer centerH margin='110px 0 0 0'>
         {/* <div className='main-container main-responsive-container'> */}
-        <Posts />
-        <SideMenu />
+        {/* <Posts />     testing ...... switching post off ...
+        <SideMenu /> */}
       </HorizontalContainer>
       {/* </div> */}
     </Provider>

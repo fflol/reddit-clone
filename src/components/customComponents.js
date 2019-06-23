@@ -2,6 +2,7 @@ import React from 'react'
 
 import { FormControl } from 'react-bootstrap'
 
+import * as Styled from './customComponentsStyle'
 import './customComponents.css'
 
 
@@ -9,13 +10,11 @@ import './customComponents.css'
 export class CustomToggle extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick(e) {
         e.preventDefault();
-
         this.props.onClick(e);
     }
 
@@ -33,9 +32,7 @@ export class CustomToggle extends React.Component {
 export class CustomMenu extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.handleChange = this.handleChange.bind(this);
-
         this.state = { value: '' };
     }
 
@@ -54,21 +51,22 @@ export class CustomMenu extends React.Component {
         const { value } = this.state;
 
         return (
-            <div style={style} className={className} aria-labelledby={labeledBy}>
-                <FormControl
+            <Styled.Container style={style} className={className} aria-labelledby={labeledBy}>
+                <Styled.Form
                     autoFocus
-                    className="mx-3 font-size-14 custom-menu"
                     placeholder="Type to filter..."
                     onChange={this.handleChange}
                     value={value}
                 />
-                <ul className="list-unstyled">
+                <Styled.Ulist>
                     {React.Children.toArray(children).filter(
                         child => {
-                            return !value || child.props.children[1].toLowerCase().startsWith(value)
+                            console.log(child)
+                            if (!child.props.eventKey) return true
+                            return !value || child.props.eventKey.toLowerCase().startsWith(value)
                         })}
-                </ul>
-            </div>
+                </Styled.Ulist>
+            </Styled.Container>
         );
     }
 }

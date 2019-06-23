@@ -8,13 +8,15 @@ import { chooseSubreddit } from '../../../actions/actions'
 import { CustomMenu } from '../../customComponents'
 
 // import 
-import { IoMdTrendingUp, IoIosPodium, IoIosCreate, IoIosRadioButtonOn, IoMdRose } from "react-icons/io"
+// import { IoMdTrendingUp, IoIosPodium, IoIosCreate, IoIosRadioButtonOn, IoMdRose } from "react-icons/io"
 
 // import redux components
 import { connect } from 'react-redux'
 
+import * as Styled from './arrowDropDownStyle'
+
 // import css
-import './ArrowDropDown.css'
+// import './ArrowDropDown.css'
 
 
 // component
@@ -26,30 +28,31 @@ const ArrowDropDown = ({ subreddit, chooseSubreddit }) => {
 
     const popular = (
         <span>
-            <IoMdTrendingUp className='text-primary pr-1 dropdown-icons' />
-            <span className='responsive-items capitalize'>popular</span>
+            <Styled.IconTrendingUp />
+            <Styled.FeedSpan>popular</Styled.FeedSpan>
         </span>
     )
 
     const all = (
         <span>
-            <IoIosPodium className='text-primary pr-1 dropdown-icons' />
-            <span className='responsive-items capitalize'>all</span>
+            <Styled.IconPodium />
+            <Styled.FeedSpan>all</Styled.FeedSpan>
         </span>
     )
 
     const original = (
         <span>
-            <IoIosCreate className='text-primary pr-1 dropdown-icons' />
-            <span className='responsive-items capitalize'>original content</span>
+            <Styled.IconCreate />
+            <Styled.FeedSpan>original content</Styled.FeedSpan>
         </span>
     )
 
 
     return (
-        <Dropdown className='dropdown-container'>
+        <Styled.DropdownContainer>
 
-            <Dropdown.Toggle variant='' className='dropdown-toggle-custom align-items-center p-0 d-flex justify-content-between'>
+            <Styled.DropdownToggle variant=''>
+                {/* <Dropdown.Toggle variant='' className='dropdown-toggle-custom align-items-center p-0 d-flex justify-content-between'> */}
                 {(() => {
                     switch (subreddit) {
                         case 'popular':
@@ -62,48 +65,48 @@ const ArrowDropDown = ({ subreddit, chooseSubreddit }) => {
                             return popular
                     }
                 })()}
-            </Dropdown.Toggle>
+                {/* </Dropdown.Toggle> */}
+            </Styled.DropdownToggle>
 
-            <Dropdown.Menu className='font-size-14 w-100' as={CustomMenu}>
+            <Dropdown.Menu as={CustomMenu}>
 
-                <Dropdown.Header className='font-size-10'>REDDIT FEEDS</Dropdown.Header>
+                <Styled.DropdownHeader>REDDIT FEEDS</Styled.DropdownHeader>
 
                 <NavDropdown.Item eventKey='popular' onSelect={handleSelect}>
                     <span>
-                        <IoMdTrendingUp className='text-primary pr-1 dropdown-icons' />
-                        <span className='capitalize'>popular</span>
+                        <Styled.IconTrendingUp />
+                        <Styled.CapitalizedSpan>popular</Styled.CapitalizedSpan>
                     </span>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item eventKey='all' onSelect={handleSelect}>
                     <span>
-                        <IoIosPodium className='text-primary pr-1 dropdown-icons' />
-                        <span className='capitalize'>all</span>
+                        <Styled.IconPodium />
+                        <Styled.CapitalizedSpan>all</Styled.CapitalizedSpan>
                     </span>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item eventKey='original' onSelect={handleSelect}>
                     <span>
-                        <IoIosCreate className='text-primary pr-1 dropdown-icons' />
-                        <span className='capitalize'>original content</span>
+                        <Styled.IconCreate />
+                        <Styled.CapitalizedSpan>original content</Styled.CapitalizedSpan>
                     </span>
                 </NavDropdown.Item>
 
-                <Dropdown.Header className='font-size-10'>OTHER</Dropdown.Header>
+                <Styled.DropdownHeader>OTHER</Styled.DropdownHeader>
 
-                <NavDropdown.Item href="">
-                    <IoIosRadioButtonOn className='text-warning pr-1 dropdown-icons capitalize' />
+                <NavDropdown.Item href="" eventKey='coin' >
+                    <Styled.IconRadioButtonOn />
                     coin
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="">
-                    <IoMdRose className='pr-1 premium-icon capitalize' />
+                <NavDropdown.Item href="" eventKey='premium' >
+                    <Styled.IconRose />
                     premium
                 </NavDropdown.Item>
 
             </Dropdown.Menu>
-
-        </Dropdown>
+        </Styled.DropdownContainer>
     )
 }
 

@@ -1,18 +1,17 @@
 import React from 'react';
 
-import { Button } from 'react-bootstrap'
+import * as Styled from './loginStyle'
 
-import './Login.css'
+// import './Login.css'
 
 const Login = () => {
     return (
-        <div className='login-container responsive-sign-in'>
-            <Button variant="outline-primary" className='mr-3 login-button large-screen-button'>LOG IN</Button>
-            <Button variant="primary" className='login-button large-screen-button'>SIGN UP</Button>
-        </div>
+        <Styled.Container>
+            <Styled.ButtonLogin variant="outline-primary">LOG IN</Styled.ButtonLogin>
+            <Styled.ButtonSignUp variant="primary">SIGN UP</Styled.ButtonSignUp>
+        </Styled.Container>
     )
 }
-
 
 
 export default Login;
