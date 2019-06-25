@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './SidePlaceholder.css'
+// import './SidePlaceholder.css'
 
-import { RedditCard } from '../customComponents'
+import * as Styled from './sidePlaceholderStyle'
+
+
 
 
 function SidePlaceholder() {
     return (
-        <RedditCard className='side-placeholder'>
-
-        </RedditCard>
+        <Styled.Card />
     );
 }
 

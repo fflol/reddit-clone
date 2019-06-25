@@ -1,10 +1,7 @@
 import React from 'react';
 
 // import react-bootstrap compoents
-import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
-
-// import icons
-import { IoMdTrendingUp, IoIosPodium, IoIosCreate } from "react-icons/io"
+import { Tooltip, OverlayTrigger } from 'react-bootstrap'
 
 // import redux components
 import { connect } from 'react-redux'
@@ -26,7 +23,7 @@ const Filter = ({ chooseSubreddit }) => {
     }
 
     return (
-        <Styled.Container>
+        <Styled.DivContainer>
 
             <Styled.NavLink eventKey='popular' onSelect={handleSelect}>
                 <OverlayTrigger placement='bottom' overlay={<Tooltip>Popular</Tooltip>}>
@@ -46,7 +43,7 @@ const Filter = ({ chooseSubreddit }) => {
                 </OverlayTrigger>
             </Styled.NavLink>
 
-        </Styled.Container>
+        </Styled.DivContainer>
     )
 }
 

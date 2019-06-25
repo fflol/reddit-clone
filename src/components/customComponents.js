@@ -1,10 +1,6 @@
 import React from 'react'
 
-import { FormControl } from 'react-bootstrap'
-
 import * as Styled from './customComponentsStyle'
-import './customComponents.css'
-
 
 
 export class CustomToggle extends React.Component {
@@ -61,7 +57,6 @@ export class CustomMenu extends React.Component {
                 <Styled.Ulist>
                     {React.Children.toArray(children).filter(
                         child => {
-                            console.log(child)
                             if (!child.props.eventKey) return true
                             return !value || child.props.eventKey.toLowerCase().startsWith(value)
                         })}
@@ -72,10 +67,4 @@ export class CustomMenu extends React.Component {
 }
 
 
-export const RedditCard = (props) => {
-    return (
-        <div className={`reddit-card ${props.className ? props.className : ''}`}>
-            {props.children}
-        </div>
-    )
-}
+export const RedditCard = Styled.Card

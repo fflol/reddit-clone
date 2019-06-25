@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { NavDropdown, Dropdown } from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
 
 import { breakpoints, smallerThan, widerThan } from '../../../styles/responsive'
 import * as mixins from '../../../styles/mixins'
@@ -89,7 +89,7 @@ export const IconCreate = styled(IoIosCreate)`
 `
 
 export const IconRadioButtonOn = styled(IoIosRadioButtonOn)`
-    color: ${mixins.colorWarning};
+    color: ${mixins.colorGold};
     padding-right: .25rem;
     font-size: 1.5rem
 `

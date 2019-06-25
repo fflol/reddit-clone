@@ -1,21 +1,27 @@
 import React from 'react';
 
+import * as Styled from './lowerFooterStyle'
+
 // import './LowerFooter.css'
 
 
 function LowerFooter() {
     return (
-        <div className='mt-3 text-center'>
+        <Styled.DivContainer>
             <div>
-                <a href="https://www.reddit.com/help/contentpolicy" className='footer-text'>content policy | privacy policy</a>
+                <Styled.ALink href="https://www.reddit.com/help/contentpolicy">
+                content policy | privacy policy
+                </Styled.ALink>
             </div>
             <div>
-                <a href="https://www.reddit.com/help/useragreement" className='footer-text'>user agreement | mod policy</a>
+                <Styled.ALink href="https://www.reddit.com/help/useragreement">
+                user agreement | mod policy
+                </Styled.ALink>
             </div>
             <div>
-                <span className='footer-text'>© 2019 Reddit, Inc. All rights reserved</span>
+                <Styled.SpanFooter>© 2019 Reddit, Inc. All rights reserved</Styled.SpanFooter>
             </div>
-        </div>
+        </Styled.DivContainer>
     );
 }
 

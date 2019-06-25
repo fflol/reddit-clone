@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap'
 import * as Styled from './logoStyle'
 
 import icon from '../../../img/Reddit_logo_orange.svg'

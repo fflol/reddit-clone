@@ -1,11 +1,5 @@
 import React from 'react';
 
-// import react-bootstrap components
-import { Form } from 'react-bootstrap'
-
-// import icons
-import { IoMdSearch } from "react-icons/io"
-
 // import actions 
 import { asyncSearch } from '../../../actions/snoowrapActions'
 

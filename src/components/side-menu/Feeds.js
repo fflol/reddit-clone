@@ -1,23 +1,21 @@
 import React from 'react';
 
-import { Button } from 'react-bootstrap'
-
-import { RedditCard } from '../customComponents'
-
-import './Feeds.css'
+import * as Styled from './feedsStyle'
 
 
 function Feeds() {
     return (
-        <RedditCard className='mt-0'>
-            <div className='feeds-landscape'></div>
-            <div className='d-flex feeds-guy-container'>
-                <div className='feeds-guy-icon'></div>
-                <h6 className='feeds-title'>r/popular</h6>
-            </div>
-            <p className='feeds-para'>The best posts on Reddit for you, pulled from the most active communities on Reddit. Check here to see the most shared, upvoted, and commented content on the internet.</p>
-            <Button className='feeds-button'>create post</Button>
-        </RedditCard>
+        <Styled.CardContainer>
+            <Styled.Landscape></Styled.Landscape>
+            <Styled.GuyContainer>
+                <Styled.GuyIcon></Styled.GuyIcon>
+                <Styled.H6Feeds>r/popular</Styled.H6Feeds>
+            </Styled.GuyContainer>
+            <Styled.PFeeds>
+                The best posts on Reddit for you, pulled from the most active communities on Reddit. Check here to see the most shared, upvoted, and commented content on the internet.
+            </Styled.PFeeds>
+            <Styled.ButtonFeeds>create post</Styled.ButtonFeeds>
+        </Styled.CardContainer>
     );
 }
 

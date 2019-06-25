@@ -5,11 +5,9 @@ import ScoreButton from './ScoreButton'
 import PostTopBarClassic from './PostTopBarClassic'
 import PostFooter from './PostFooter'
 
-// import icon
-import { IoMdLogOut, IoIosImage } from "react-icons/io"
-
-// import css
-import './SinglePostClassic.css'
+// import styled components
+import * as Styled from './singlePostClassicStyle'
+import { HorizontalContainer } from '../../styles/sharedComponents'
 
 // import supportive funcs
 import { convertNums } from '../../supportive'
@@ -35,28 +33,28 @@ const SinglePostClassic = ({ post }) => {
             thumbnail !== 'default' &&
             thumbnail !== 'spoiler' &&
             thumbnail !== 'image') {
-            return (<img src={thumbnail} alt={title} className='single-post-classic-thumbnail' />)
+            return (<Styled.ImgThumbnail src={thumbnail} alt={title} />)
         }
-        return (<IoIosImage className='single-post-classic-thumbnail' />)
+        return (<Styled.IconImage />)
     }
 
 
     return (
-        <div href={`https://www.reddit.com${permalink}`} rel="noopener noreferrer" target="_blank" className='d-flex single-post-classic-container'>
+        <Styled.DivContainer href={`https://www.reddit.com${permalink}`} rel="noopener noreferrer" target="_blank">
             <ScoreButton convertedUps={convertedUps} />
-            <div className='single-post-classic-right-container'>
+            <HorizontalContainer padding='8px'>
                 {checkThumbnail(thumbnail)}
                 <div>
-                    <h2 className='post-title'>{title}</h2>
-                    <a href={url} className='d-block mt-2 ml-1' rel="noopener noreferrer" target="_blank">
+                    <Styled.H2Title>{title}</Styled.H2Title>
+                    <Styled.ALink href={url} rel="noopener noreferrer" target="_blank">
                         {url}
-                        <IoMdLogOut className='text-primary' />
-                    </a>
+                        <Styled.IconLogOut />
+                    </Styled.ALink>
                     <PostTopBarClassic barParams={barParams} />
                     <PostFooter footerParams={footerParams} />
                 </div>
-            </div>
-        </div>
+            </HorizontalContainer>
+        </Styled.DivContainer>
     );
 }
 

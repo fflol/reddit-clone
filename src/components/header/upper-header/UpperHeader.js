@@ -1,8 +1,5 @@
 import React from 'react';
 
-// import react-bootstrap components
-import { Navbar } from 'react-bootstrap'
-
 // import components
 import Logo from './Logo'
 import Login from './Login'
@@ -11,8 +8,6 @@ import SearchBar from './SearchBar'
 import ArrowDropDown from './ArrowDropDown'
 import Filter from './Filter'
 
-// import css
-// import './UpperHeader.css'
 
 // import styled components
 import { UpperHeaderNavbar, FlexGrowContainer } from './upperHeaderStyle'

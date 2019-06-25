@@ -6,10 +6,10 @@ import * as Styled from './loginStyle'
 
 const Login = () => {
     return (
-        <Styled.Container>
+        <Styled.DivContainer>
             <Styled.ButtonLogin variant="outline-primary">LOG IN</Styled.ButtonLogin>
             <Styled.ButtonSignUp variant="primary">SIGN UP</Styled.ButtonSignUp>
-        </Styled.Container>
+        </Styled.DivContainer>
     )
 }
 

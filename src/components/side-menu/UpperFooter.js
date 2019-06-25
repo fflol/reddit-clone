@@ -1,28 +1,101 @@
 import React from 'react';
 
-import './UpperFooter.css'
+import { VerticalContainer } from '../../styles/sharedComponents'
 
+// import './UpperFooter.css'
+
+import * as Styled from './upperFooterStyle'
 
 function UpperFooter() {
     return (
-        <div className='d-flex justify-content-between upper-footer-container'>
-            <div className='d-flex flex-column'>
-                <a href="https://about.reddit.com" className='footer-text'>about</a>
-                <a href="https://about.reddit.com/careers" className='footer-text'>careers</a>
-                <a href="https://about.reddit.com/press" className='footer-text'>press</a>
-            </div>
-            <div className='d-flex flex-column'>
-                <a href="https://about.reddit.com/advertise" className='footer-text'>advertise</a>
-                <a href="https://redditblog.com/" className='footer-text'>blog</a>
-                <a href="https://www.reddithelp.com/careers" className='footer-text'>help</a>
-            </div>
-            <div className='d-flex flex-column'>
-                <a href="https://www.reddit.com/mobile/download" className='footer-text'>the reddit app</a>
-                <a href="https://www.reddit.com/coins" className='footer-text'>reddit coins</a>
-                <a href="https://www.reddit.com/premium" className='footer-text'>reddit premium</a>
-                <a href="https://redditgifts.com/" className='footer-text'>reddit gifts</a>
-            </div>
-        </div>
+        <Styled.DivContainer>
+
+            <VerticalContainer>
+                <Styled.ALink
+                    href="https://about.reddit.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    about
+                </Styled.ALink>
+
+                <Styled.ALink
+                    href="https://about.reddit.com/careers"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    careers
+                </Styled.ALink>
+
+                <Styled.ALink
+                    href="https://about.reddit.com/press"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    press
+                </Styled.ALink>
+            </VerticalContainer>
+
+            <VerticalContainer>
+                <Styled.ALink
+                    href="https://about.reddit.com/advertise"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    advertise
+                </Styled.ALink>
+
+                <Styled.ALink
+                    href="https://redditblog.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    blog
+                </Styled.ALink>
+
+                <Styled.ALink
+                    href="https://www.reddithelp.com/careers"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    help
+                </Styled.ALink>
+            </VerticalContainer>
+
+            <VerticalContainer>
+                <Styled.ALink
+                    href="https://www.reddit.com/mobile/download"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    the reddit app
+                </Styled.ALink>
+
+                <Styled.ALink
+                    href="https://www.reddit.com/coins"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    reddit coins
+                </Styled.ALink>
+
+                <Styled.ALink
+                    href="https://www.reddit.com/premium"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    reddit premium
+                </Styled.ALink>
+                
+                <Styled.ALink
+                    href="https://redditgifts.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    reddit gifts
+                </Styled.ALink>
+            </VerticalContainer>
+        </Styled.DivContainer>
     );
 }
 

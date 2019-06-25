@@ -1,17 +1,16 @@
 import React from 'react';
 
 // import supportive react-bootstrap components
-import { OverlayTrigger, Tooltip } from 'react-bootstrap'
+import { OverlayTrigger } from 'react-bootstrap'
 
-// import css
-import './PostTopBar.css'
+import * as Styled from './postTopBarClassicStyle'
 
 // import supportive funcs
 import { diffHours } from '../../supportive'
 
 
 // component
-function PostTopBar({ barParams, className }) {
+function PostTopBar({ barParams }) {
 
     const { subreddit, authorName, createdTimeUnix } = barParams
     const createdTime = new Date(createdTimeUnix * 1000)
@@ -30,13 +29,13 @@ function PostTopBar({ barParams, className }) {
 
     
     return (
-        <div className={`d-flex justify-content-between my-0 post-top-bar-container ${className}`}>
+        <Styled.DivContainer>
 
-            <div className='d-flex mt-1'>
+            <Styled.DivSubContainer>
 
                 <span></span>
-                <span className='top-bar-overlay font-weight-700'>{subreddit}</span>
-                <span className='top-bar-overlay'>&nbsp;u/{authorName}&nbsp;</span>
+                <Styled.SpanSubreddit>{subreddit}</Styled.SpanSubreddit>
+                <Styled.Span>&nbsp;u/{authorName}&nbsp;</Styled.Span>
                 {/* <OverlayTrigger
                     placement="bottom-start"
                     delay={{ show: 250, hide: 400 }}
@@ -56,16 +55,16 @@ function PostTopBar({ barParams, className }) {
                 <OverlayTrigger
                     placement="top"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={<Tooltip className='top-bar-time-window'>{timeDisplayed}</Tooltip>}
+                    overlay={<Styled.TooltipTime>{timeDisplayed}</Styled.TooltipTime>}
                 >
-                    <span className='top-bar-overlay'>{timePassed} hours ago</span>
+                    <Styled.Span>{timePassed} hours ago</Styled.Span>
                 </OverlayTrigger>
 
-            </div>
+            </Styled.DivSubContainer>
 
             {/* <Button className='top-bar-join-button'>+JOIN</Button> */}
 
-        </div>
+        </Styled.DivContainer>
     );
 }
 

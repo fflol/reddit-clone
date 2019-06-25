@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 // import components
-import { RedditCard } from '../customComponents'
 import SingleCommunity from './SingleCommunity'
 
 // import redux components
@@ -11,7 +10,7 @@ import { connect } from 'react-redux'
 import { asyncFetchTrendingCommunities } from '../../actions/snoowrapActions'
 
 // import css
-import './TrendingCommunities.css'
+import * as Styled from './trendingCommunitiesStyle'
 
 
 // component
@@ -22,12 +21,12 @@ const TrendingCommunities = ({ trendingCommunities, asyncFetchTrendingCommunitie
     })
 
     return (
-        <RedditCard className='trending-communities-container'>
-            <h6 className='trending-communities-title'>Trending Communities</h6>
-            <div className='d-flex flex-column mt-2'>
+        <Styled.Card>
+            <Styled.H6Title>Trending Communities</Styled.H6Title>
+            <Styled.DivContainer>
                 {trendingCommunities.map(community => <SingleCommunity {...community} />)}
-            </div>
-        </RedditCard>
+            </Styled.DivContainer>
+        </Styled.Card>
     );
 }
 

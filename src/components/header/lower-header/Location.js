@@ -1,29 +1,30 @@
 import React from 'react'
 
-import { Dropdown, NavDropdown } from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
 
-import './Location.css'
+import {Container} from '../../../styles/sharedComponents'
+
+import * as Styled from './locationStyle'
+// import './Location.css'
 
 
 const Location = () => {
   return (
-    <div className='location-container'>
-
+    <Container margin='0px 0px 0 16px'>
       <Dropdown>
 
-        <Dropdown.Toggle variant="" className='sort-toggle d-flex align-items-center justify-content-around'>
-          <span className='sort-toggle-title'>New Zealand</span>
-        </Dropdown.Toggle>
+        <Styled.DropdownToggle variant="">
+          <Styled.ToggleSpan>New Zealand</Styled.ToggleSpan>
+        </Styled.DropdownToggle>
 
-        <Dropdown.Menu className='font-size-14'>
-          <NavDropdown.Item href="">
+        <Styled.DropdownMenu>
+          <Dropdown.Item href="">
             New Zealand
-          </NavDropdown.Item>
-        </Dropdown.Menu>
+          </Dropdown.Item>
+        </Styled.DropdownMenu>
 
       </Dropdown>
-
-    </div>
+    </Container>
   );
 }
 

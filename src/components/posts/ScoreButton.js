@@ -1,21 +1,19 @@
 import React from 'react';
 
-import { IoMdArrowRoundUp, IoMdArrowRoundDown } from "react-icons/io";
-
-import './ScoreButton.css'
+import * as Styled from './scoreButtonStyle'
 
 function ScoreButton({ convertedUps }) {
     return (
-        <div className='score-button-container'>
-            <button className='score-button'>
-                <IoMdArrowRoundUp className='score-icon' />
-            </button>
-            <span className='score-number'>{convertedUps}</span>
-            <button className='score-button'>
-                <IoMdArrowRoundDown className='score-icon' />
-            </button>
-        </div>
-    );
+        <Styled.DivContainer>
+            <Styled.Button>
+                <Styled.IconRoundUp />
+            </Styled.Button>
+            <Styled.SpanScore>{convertedUps}</Styled.SpanScore>
+            <Styled.Button>
+                <Styled.IconRoundDown />
+            </Styled.Button>
+        </Styled.DivContainer>
+    )
 }
 
 export default ScoreButton;

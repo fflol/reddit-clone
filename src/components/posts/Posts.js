@@ -14,8 +14,9 @@ import { increasePage, resetPage } from '../../actions/actions'
 // import infinite scroll
 import InfiniteScroll from "react-infinite-scroll-component";
 
+import * as Styled from './postsStyle'
 // import css
-import './Posts.css'
+// import './Posts.css'
 
 
 // component 
@@ -62,7 +63,7 @@ const Posts = ({
 
 
   return (
-    <main className={`posts-container`}>
+    <Styled.MainContainer>
 
       <InfiniteScroll
         pullDownToRefresh
@@ -75,7 +76,7 @@ const Posts = ({
         {posts.map(viewPosts(view))}
       </InfiniteScroll>
 
-    </main>
+    </Styled.MainContainer>
   )
 }
 

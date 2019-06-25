@@ -5,11 +5,8 @@ import ScoreButton from './ScoreButton'
 import PostTopBar from './PostTopBar'
 import PostFooter from './PostFooter'
 
-// import icons
-import { IoMdLogOut } from "react-icons/io"
+import * as Styled from './singlePostCardStyle'
 
-// import css
-import './SinglePostCard.css'
 
 // import supportive funcs
 import { checkURL, convertNums } from '../../supportive'
@@ -32,38 +29,38 @@ const SinglePostCard = ({ post }) => {
 
     const mainDisplay = () => {
         if (Object.entries(media_embed).length !== 0) {
-            return (<div className='single-post-card-media' dangerouslySetInnerHTML={{ __html: media_embed.content }} />)
+            return (<Styled.DivCardMedia dangerouslySetInnerHTML={{ __html: media_embed.content }} />)
         }
         else if (url && checkURL(url)) {
-            return (<img src={url} alt={title} className='single-post-card-img' />)
+            return (<Styled.ImgCardImg src={url} alt={title} />)
         }
         else if (thumbnail !== 'self' && thumbnail !== 'default' && thumbnail !== 'spoiler') {
-            return (<img src={thumbnail} alt={title} className='single-post-card-thumbnail' />)
+            return (<Styled.ImgCardThumbnail src={thumbnail} alt={title} />)
         }
         else return
     }
 
 
     return (
-        <div className='d-flex single-post-card-container'>
+        <Styled.DivContainer>
             <a href={`https://www.reddit.com${permalink}`} rel="noopener noreferrer" target="_blank">
-                <span className="single-post-card-link-wrapper"></span>
+                <Styled.SpanLinkWrapper></Styled.SpanLinkWrapper>
             </a>
             <ScoreButton convertedUps={convertedUps} />
             <div>
                 <PostTopBar barParams={barParams} />
-                <h2 className='post-title'>{title}</h2>
+                <Styled.H2Title >{title}</Styled.H2Title>
                 {/* <p>{selftext}</p> */}
-                <div className='my-2 ml-1 max-height' dangerouslySetInnerHTML={{ __html: selftext_html }} />
-                <a href={url} className='single-post-card-link' rel="noopener noreferrer" target="_blank">
+                <Styled.DivSelfText dangerouslySetInnerHTML={{ __html: selftext_html }} />
+                <Styled.ALink href={url} rel="noopener noreferrer" target="_blank">
                     {url}
-                    <IoMdLogOut className='text-primary' />
-                </a>
+                    <Styled.IconLogOut />
+                </Styled.ALink>
                 {mainDisplay()}
 
                 <PostFooter footerParams={footerParams} />
             </div>
-        </div>
+        </Styled.DivContainer>
     );
 }
 

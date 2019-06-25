@@ -1,11 +1,7 @@
 import React from 'react'
 
 // import react-bootstrap component
-import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
-
-// import icons
-import { MdReorder, MdViewAgenda } from "react-icons/md";
-import { GoThreeBars } from "react-icons/go";
+import { Tooltip, OverlayTrigger } from 'react-bootstrap'
 
 // import redux components
 import { connect } from 'react-redux'
@@ -13,8 +9,9 @@ import { connect } from 'react-redux'
 // import actions
 import { chooseView } from '../../../actions/actions'
 
+import * as Styled from './viewStyle'
 // import css
-import './View.css'
+// import './View.css'
 
 
 // conponent
@@ -23,36 +20,31 @@ const View = ({ view, chooseView }) => {
   const handleSelect = (eventKey) => {
     chooseView(eventKey)
   }
-
-  const cardColorClass = view === 'card' ? 'text-primary' : 'light-blue'
-  const classicColorClass = view === 'classic' ? 'text-primary' : 'light-blue'
-  const compactColorClass = view === 'compact' ? 'text-primary' : 'light-blue'
-
   
   return (
-    <div className='d-flex align-items-center view-container'>
+    <Styled.Container>
 
-      <span className='view-title'>VIEW</span>
+      <Styled.TitleSpan>VIEW</Styled.TitleSpan>
 
-      <Nav.Link eventKey='card' onSelect={handleSelect} className='p-0'>
+      <Styled.NavLink eventKey='card' onSelect={handleSelect}>
         <OverlayTrigger placement='top' overlay={<Tooltip>Card</Tooltip>}>
-          <MdViewAgenda className={`${cardColorClass} card-icon`} />
+          {view === 'card' ? <Styled.IconCardActivated /> : <Styled.IconCardInactivated />}
         </OverlayTrigger>
-      </Nav.Link>
+      </Styled.NavLink>
 
-      <Nav.Link eventKey='classic' onSelect={handleSelect} className='p-0'>
+      <Styled.NavLink eventKey='classic' onSelect={handleSelect}>
         <OverlayTrigger placement='top' overlay={<Tooltip>Classic</Tooltip>}>
-          <GoThreeBars className={`${classicColorClass} filter-icons`} />
+          {view === 'classic' ? <Styled.IconClassicActivated /> : <Styled.IconClassicInactivated />}
         </OverlayTrigger>
-      </Nav.Link>
+      </Styled.NavLink>
 
-      <Nav.Link eventKey='compact' onSelect={handleSelect} className='p-0'>
+      <Styled.NavLink eventKey='compact' onSelect={handleSelect}>
         <OverlayTrigger placement='top' overlay={<Tooltip>Compact</Tooltip>}>
-          <MdReorder className={`${compactColorClass} filter-icons`} />
+          {view === 'compact' ? <Styled.IconCompactActivated /> : <Styled.IconCompactInactivated />}
         </OverlayTrigger>
-      </Nav.Link>
+      </Styled.NavLink>
 
-    </div>
+    </Styled.Container>
   );
 }
 

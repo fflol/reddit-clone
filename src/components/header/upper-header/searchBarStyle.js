@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import { Form } from 'react-bootstrap'
 
-import { componentsBackground, lightGrayBackground, borderDarkGrey } from '../../../styles/mixins'
-import { breakpoints, smallerThan, widerThan } from '../../../styles/responsive'
+import * as mixins from '../../../styles/mixins'
 import { HorizontalContainer } from '../../../styles/sharedComponents'
 
 
@@ -12,17 +11,17 @@ import { IoMdSearch } from "react-icons/io"
 export const SearchContainer = styled(HorizontalContainer)`
     flex-grow: 1;
     width: auto;
-    background-color: ${lightGrayBackground};
+    background-color: ${mixins.colorLightGrayBackground};
     border-radius: 4px;
-    border: 1px solid ${borderDarkGrey};
-    color: ${borderDarkGrey};
+    border: 1px solid ${mixins.colorBorderLightGrey};
+    color: ${mixins.colorBorderLightGrey};
     height: 36px;
     padding: 0 10px;
     margin: 5px 0 0 0;
 
     &:hover,
     &:focus {
-        background-color: ${componentsBackground};
+        background-color: ${mixins.colorComponentsBackground};
     }
 `
 

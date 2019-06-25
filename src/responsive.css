@@ -1,32 +1,32 @@
 /* under 576px  */
 @media (max-width: 576px) {
-
+/* 
     .main-responsive-container {
         margin: 0 0px;
         padding: 0;
-    }
+    } */
 
-    .posts-container,
-    .lower-header-container {
+    /* .posts-container, */
+    /* .lower-header-container {
         width: 100%;
-    }
+    } */
 
     /* .responsive-items, */
     /* .responsive-sign-in, */
-    .side-menu-container,
-    .filter-container,
-    .score-button-container,
-    .responsive-post-footer-button {
+    /* .side-menu-container, */
+    /* .filter-container, */
+    /* .score-button-container, */
+    /* .responsive-post-footer-button {
         display: none;
-    }
+    } */
 
-    .responsive-post-footer-item {
+    /* .responsive-post-footer-item {
         display: block;
-    }
+    } */
 
-    .responsive-post-footer-score {
+    /* .responsive-post-footer-score {
         display: flex
-    }
+    } */
 
     /* .upper-header {
         padding: 0 5px;
@@ -47,17 +47,17 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    .main-responsive-container {
+    /* .main-responsive-container {
         margin: 0 0px;
         padding: 0;
-    }
+    } */
 
-    .posts-container,
-    .lower-header-container {
+    /* .posts-container, */
+    /* .lower-header-container {
         width: 100%;
-    }
+    } */
 
-    .responsive-items,
+    /* .responsive-items, */
     .responsive-sign-in,
     .side-menu-container,
     .filter-container,
@@ -93,17 +93,17 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .main-responsive-container {
+    /* .main-responsive-container {
         margin: 0 20px;
         padding: 0;
-    }
+    } */
 
-    .posts-container,
-    .lower-header-container {
+    /* .posts-container, */
+    /* .lower-header-container {
         width: 100%;
-    }
+    } */
 
-    .responsive-items,
+    /* .responsive-items, */
     .side-menu-container,
     .filter-container,
     .responsive-post-footer-item,
@@ -139,15 +139,15 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    .main-responsive-container {
+    /* .main-responsive-container {
         margin: 0 20px;
         padding: 0;
-    }
+    } */
 
-    .posts-container,
-    .lower-header-container {
+    /* .posts-container, */
+    /* .lower-header-container {
         width: 648px;
-    }
+    } */
 
     .responsive-sign-in,
     .side-menu-container,
@@ -156,7 +156,7 @@
         display: flex
     }
 
-    .responsive-items,
+    /* .responsive-items, */
     .responsive-post-footer-item,
     .responsive-post-footer-score {
         display: none;
@@ -185,19 +185,19 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .responsive-items {
+    /* .responsive-items {
         display: inline-block;
-    }
+    } */
 
-    .main-responsive-container {
+    /* .main-responsive-container {
         margin: 0 20px;
         padding: 0;
-    }
+    } */
 
-    .posts-container,
-    .lower-header-container {
+    /* .posts-container, */
+    /* .lower-header-container {
         width: 648px;
-    }
+    } */
 
     .responsive-sign-in,
     .side-menu-container,

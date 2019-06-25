@@ -1,13 +1,14 @@
 import React from 'react';
 
-import './UserMiniWindow.css'
+import * as Styled from './userMiniWindowStyle'
+// import './UserMiniWindow.css'
 
 
 // not finished, not been used
 const UserMiniWindow = () => {
     return (
         <div>
-            <a className='user-mini-window-title'>author mini window</a>
+            <Styled.ALink>author mini window</Styled.ALink>
             <div className=''>
                 <div>
                     <span>23.1m</span>

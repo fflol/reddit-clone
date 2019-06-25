@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { Nav, Tooltip, OverlayTrigger } from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
 
 import { breakpoints, smallerThan, widerThan } from '../../../styles/responsive'
 
 // import icons
 import { IoMdTrendingUp, IoIosPodium, IoIosCreate } from "react-icons/io"
 
-export const Container = styled.div`
+export const DivContainer = styled.div`
     border-right: 1px solid rgb(237, 239, 241);
     margin: 6px 0px 0 10px;
     height: 28px;

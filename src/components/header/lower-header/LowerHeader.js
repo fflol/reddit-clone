@@ -1,23 +1,25 @@
 import React from 'react';
-import {Navbar} from 'react-bootstrap'
 
 import View from './View'
 import Sort from './Sort'
 import Location from './Location'
 
-import './LowerHeader.css'
+import { SideMenuContainer } from '../../../styles/sharedComponents'
+
+import * as Styled from './lowerHeaderStyle'
+// import './LowerHeader.css'
 
 
 function LowerHeader() {
   return (
-    <Navbar className='d-flex justify-content-center main-responsive-container'>
-      <div className='lower-header-container'>
+    <Styled.NavBar>
+        <Styled.DivContainer>
         <View />
         <Sort />
         <Location />
-      </div>
-      <div className='side-menu-container'></div>
-    </Navbar>
+        </Styled.DivContainer>
+      <SideMenuContainer />
+    </Styled.NavBar>
   );
 }
 

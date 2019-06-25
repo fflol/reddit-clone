@@ -23,3 +23,11 @@ export const Ulist = styled.ul`
     padding-left: 0;
     list-style: none;
 `
+
+export const Card = styled.div`
+    background-color: rgba(255, 255, 255);
+    overflow: hidden;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin: 15px 0px 0 0;
+`

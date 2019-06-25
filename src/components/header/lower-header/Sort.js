@@ -3,17 +3,14 @@ import React from 'react'
 // import react-bootstrap component
 import { NavDropdown, Dropdown } from 'react-bootstrap'
 
-// import icons
-import { IoIosBonfire, IoIosStar, IoIosThunderstorm, IoIosPodium, IoMdTrendingUp, } from "react-icons/io"
-
 // import redux components
 import { connect } from 'react-redux'
 
 // import actions
 import { chooseSort } from '../../../actions/actions'
 
-// import css
-import './Sort.css'
+import * as Styled from './sortStyle'
+import { HorizontalContainer } from '../../../styles/sharedComponents'
 
 
 // component
@@ -26,61 +23,61 @@ const Sort = ({ sort, chooseSort }) => {
   const icon = () => {
     switch (sort) {
       case 'hot':
-        return <IoIosBonfire className='sort-icon' />
+        return <Styled.IconBonfire />
       case 'new':
-        return <IoIosStar className='sort-icon' />
+        return <Styled.IconStar />
       case 'controversial':
-        return <IoIosThunderstorm className='sort-icon' />
+        return <Styled.IconThunderstorm />
       case 'top':
-        return <IoIosPodium className='sort-icon' />
+        return <Styled.IconPodium />
       case 'rising':
-        return <IoMdTrendingUp className='sort-icon' />
+        return <Styled.IconTrendingUp />
       default:
         return
     }
   }
 
   return (
-    <div className='d-flex align-items-center'>
-      <span className='sort-title'>SORT</span>
+    <HorizontalContainer centerV>
+      <Styled.TitleSpan>SORT</Styled.TitleSpan>
 
       <Dropdown>
 
-        <Dropdown.Toggle variant="" className='sort-toggle d-flex align-items-center justify-content-around'>
+        <Styled.DropdownToggle variant="">
           {icon()}
-          <span className='sort-toggle-title'>{sort}</span>
-        </Dropdown.Toggle>
+          <Styled.TitleSpan>{sort}</Styled.TitleSpan>
+        </Styled.DropdownToggle>
 
-        <Dropdown.Menu className='font-size-14'>
+        <Styled.DropdownMenu>
 
           <NavDropdown.Item eventKey='hot' onSelect={handleSelect}>
-            <IoIosBonfire className='text-secondary mr-2 options-icon' />
+            <Styled.IconSecondaryBonfire />
             Hot
           </NavDropdown.Item>
 
           <NavDropdown.Item eventKey='new' onSelect={handleSelect}>
-            <IoIosStar className='text-secondary mr-2 options-icon' />
+            <Styled.IconSecondaryStar />
             New
           </NavDropdown.Item>
 
           <NavDropdown.Item eventKey='controversial' onSelect={handleSelect}>
-            <IoIosThunderstorm className='text-secondary mr-2 options-icon' />
+            <Styled.IconSecondaryThunderstorm />
             Controversial
           </NavDropdown.Item>
 
           <NavDropdown.Item eventKey='top' onSelect={handleSelect}>
-            <IoIosPodium className='text-secondary mr-2 options-icon' />
+            <Styled.IconSecondaryPodium />
             Top
           </NavDropdown.Item>
 
           <NavDropdown.Item eventKey='rising' onSelect={handleSelect}>
-            <IoMdTrendingUp className='text-secondary mr-2 options-icon' />
+            <Styled.IconSecondaryTrendingUp />
             Rising
           </NavDropdown.Item>
 
-        </Dropdown.Menu>
+        </Styled.DropdownMenu>
       </Dropdown>
-    </div>
+    </HorizontalContainer>
   );
 }
 
