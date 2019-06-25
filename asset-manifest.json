@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/reddit-clone/static/css/main.ebb06ad6.chunk.css",
-    "main.js": "/reddit-clone/static/js/main.554ee344.chunk.js",
-    "main.js.map": "/reddit-clone/static/js/main.554ee344.chunk.js.map",
+    "main.css": "/reddit-clone/static/css/main.2add6408.chunk.css",
+    "main.js": "/reddit-clone/static/js/main.f88d2f5b.chunk.js",
+    "main.js.map": "/reddit-clone/static/js/main.f88d2f5b.chunk.js.map",
     "runtime~main.js": "/reddit-clone/static/js/runtime~main.483c9ea0.js",
     "runtime~main.js.map": "/reddit-clone/static/js/runtime~main.483c9ea0.js.map",
-    "static/js/2.ff8087e9.chunk.js": "/reddit-clone/static/js/2.ff8087e9.chunk.js",
-    "static/js/2.ff8087e9.chunk.js.map": "/reddit-clone/static/js/2.ff8087e9.chunk.js.map",
+    "static/js/2.1470b8d2.chunk.js": "/reddit-clone/static/js/2.1470b8d2.chunk.js",
+    "static/js/2.1470b8d2.chunk.js.map": "/reddit-clone/static/js/2.1470b8d2.chunk.js.map",
     "index.html": "/reddit-clone/index.html",
-    "precache-manifest.9be371371fd2c41ccfa5952ee3f44302.js": "/reddit-clone/precache-manifest.9be371371fd2c41ccfa5952ee3f44302.js",
+    "precache-manifest.eaceee28e76450bc9a13fe87b0f7231c.js": "/reddit-clone/precache-manifest.eaceee28e76450bc9a13fe87b0f7231c.js",
     "service-worker.js": "/reddit-clone/service-worker.js",
-    "static/css/main.ebb06ad6.chunk.css.map": "/reddit-clone/static/css/main.ebb06ad6.chunk.css.map",
+    "static/css/main.2add6408.chunk.css.map": "/reddit-clone/static/css/main.2add6408.chunk.css.map",
     "static/media/Reddit_logo_orange.svg": "/reddit-clone/static/media/Reddit_logo_orange.e03328ce.svg",
-    "static/media/Feeds.css": "/reddit-clone/static/media/banner@2x.34dbc917.png",
-    "static/media/reddittext.svg": "/reddit-clone/static/media/reddittext.ae56e979.svg"
+    "static/media/banner@2x.png": "/reddit-clone/static/media/banner@2x.34dbc917.png",
+    "static/media/reddittext.svg": "/reddit-clone/static/media/reddittext.ae56e979.svg",
+    "static/media/snoo-home@2x.png": "/reddit-clone/static/media/snoo-home@2x.374ec6c8.png"
   }
 }

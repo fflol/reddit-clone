@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a3cb3e11e5b87b8c4d01ba69954a37f",
+    "revision": "0010f792f6e26565cf3559e766a98a10",
     "url": "/reddit-clone/index.html"
   },
   {
-    "revision": "92ea3f18110f8258e34e",
-    "url": "/reddit-clone/static/css/main.ebb06ad6.chunk.css"
+    "revision": "332ff9d9bbd7520f918b",
+    "url": "/reddit-clone/static/css/main.2add6408.chunk.css"
   },
   {
-    "revision": "e15b240f508ab2588bcd",
-    "url": "/reddit-clone/static/js/2.ff8087e9.chunk.js"
+    "revision": "1370b9847deb840a41cc",
+    "url": "/reddit-clone/static/js/2.1470b8d2.chunk.js"
   },
   {
-    "revision": "92ea3f18110f8258e34e",
-    "url": "/reddit-clone/static/js/main.554ee344.chunk.js"
+    "revision": "332ff9d9bbd7520f918b",
+    "url": "/reddit-clone/static/js/main.f88d2f5b.chunk.js"
   },
   {
     "revision": "57805178f081ff90ec50",
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ae56e979bb37687dfac20a175f7f1dd8",
     "url": "/reddit-clone/static/media/reddittext.ae56e979.svg"
+  },
+  {
+    "revision": "374ec6c84e168d10bf785aa2e74395e5",
+    "url": "/reddit-clone/static/media/snoo-home@2x.374ec6c8.png"
   }
 ]);
