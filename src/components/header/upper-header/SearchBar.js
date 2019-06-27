@@ -41,6 +41,4 @@ const SearchBar = ({ asyncSearch }) => {
 }
 
 
-const mapStateToProps = () => { }
-
-export default connect(mapStateToProps, { asyncSearch })(SearchBar)
+export default connect(null, { asyncSearch })(SearchBar)

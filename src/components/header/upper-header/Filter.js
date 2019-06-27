@@ -48,7 +48,4 @@ const Filter = ({ chooseSubreddit }) => {
 }
 
 
-
-const mapStateToProps = () => { }
-
-export default connect(mapStateToProps, { chooseSubreddit })(Filter)
+export default connect(null, { chooseSubreddit })(Filter)
