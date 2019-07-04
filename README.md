@@ -63,7 +63,11 @@ infinite scroll
   
 
 * Night view theme
-
   
+  
+
+* Refine the search function
+
+
 
 * other stuff ...
