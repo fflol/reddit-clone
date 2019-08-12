@@ -7,8 +7,6 @@ import SideMenu from './components/side-menu/SideMenu'
 
 import { store } from './store/store'
 
-import './responsive.css'
-// import './App.css'
 
 // import styled-components
 import { GlobalStyle } from './styles/reset'
@@ -20,13 +18,11 @@ function App() {
       <GlobalStyle />
       <Header />
       <HorizontalContainer centerH margin='110px 0 0 0'>
-        {/* <div className='main-container main-responsive-container'> */}
         <Posts />
         <SideMenu />
       </HorizontalContainer>
-      {/* </div> */}
     </Provider>
-  );
+  )
 }
 
-export default App;
+export default App
