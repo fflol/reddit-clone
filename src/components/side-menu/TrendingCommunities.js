@@ -24,7 +24,11 @@ const TrendingCommunities = ({ trendingCommunities, asyncFetchTrendingCommunitie
         <Styled.Card>
             <Styled.H6Title>Trending Communities</Styled.H6Title>
             <Styled.DivContainer>
-                {trendingCommunities.map(community => <SingleCommunity {...community} />)}
+                {trendingCommunities.map(community =>
+                    <SingleCommunity
+                        key={community.display_name_prefixed}
+                        {...community}
+                    />)}
             </Styled.DivContainer>
         </Styled.Card>
     );
