@@ -58,7 +58,7 @@ It's deployed [here](https://fflol.github.io/reddit-clone/).
     │       ├── App.js                              # putting components together
     │       ├── App.test.js                 
     │       ├── index.js                            # renders App into index.html
-    │       ├── oauthInfo.js                        # soonwrap auth :sweat_smile:
+    │       ├── oauthInfo.js                        # soonwrap auth :)
     │       ├── serviceWorker.js
     │       └── supportive.js                       # supportive functions
     ├── .gitignore
@@ -105,7 +105,7 @@ Most of the logics are in **Posts** component.
 - a: when **Posts** first loaded, reset() fires, sets page number to 1,
   if **subreddit** and **sort** changes, reset() also fires
 
-- b: when any of **subreddit**/**sort**/**page** changes, causes the app to fetch posts from Reddit server and overwrite the **posts** state
+- b: when any of **subreddit** / **sort** / **page** changes, causes the app to fetch posts from Reddit server and overwrite the **posts** state
 
 - props changed causes component to re-render, infinite scroll displays new **posts**
 
